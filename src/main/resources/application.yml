@@ -1,0 +1,23 @@
+server:
+  port: 8090
+  servlet:
+    context-path: /sbmybatisdemo
+spring:
+  thymeleaf:
+    cache: false
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver #驱动配置
+    username: root
+    password: bcit
+    url: jdbc:mysql://localhost:3306/ganlan17?useUnicode=true&characterEncoding=utf8&serverTimezone=Asia/Shanghai
+mybatis:
+  type-aliases-package: com.etc.entity
+  #mapper-locations: classpath:mapper/*.xml
+  #pagehelper分页配置
+pagehelper:
+  helperDialect: mysql
+  #启用合理化，如果pageNum<1会查询第一页，如果pageNum>pages会查询最后一页
+  reasonable: true
+  supportMethodsArguments: true
+  params: count=countSql
+

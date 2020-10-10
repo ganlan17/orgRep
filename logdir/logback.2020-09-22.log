@@ -1,0 +1,1333 @@
+10:55:26.801 logback [restartedMain] INFO  com.etc.SbmybatisdemoApplication - Starting SbmybatisdemoApplication on USER-20190611ED with PID 4648 (E:\IdeaProjects2\sbmybatisdemo\target\classes started by Administrator in E:\IdeaProjects2\lagou)
+10:55:26.804 logback [restartedMain] DEBUG com.etc.SbmybatisdemoApplication - Running with Spring Boot v2.3.4.RELEASE, Spring v5.2.9.RELEASE
+10:55:26.804 logback [restartedMain] INFO  com.etc.SbmybatisdemoApplication - No active profile set, falling back to default profiles: default
+10:55:26.940 logback [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+10:55:26.940 logback [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+10:55:28.569 logback [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8090 (http)
+10:55:28.580 logback [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8090"]
+10:55:28.581 logback [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+10:55:28.582 logback [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.38]
+10:55:28.706 logback [restartedMain] INFO  o.a.c.c.C.[.[.[/sbmybatisdemo] - Initializing Spring embedded WebApplicationContext
+10:55:28.706 logback [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1766 ms
+10:55:29.570 logback [restartedMain] INFO  o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+10:55:29.580 logback [restartedMain] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerAdapter - ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+10:55:29.656 logback [restartedMain] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - 8 mappings in 'requestMappingHandlerMapping'
+10:55:29.807 logback [restartedMain] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+10:55:29.830 logback [restartedMain] DEBUG o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+10:55:30.054 logback [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+10:55:30.073 logback [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8090"]
+10:55:30.126 logback [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8090 (http) with context path '/sbmybatisdemo'
+10:55:30.143 logback [restartedMain] INFO  com.etc.SbmybatisdemoApplication - Started SbmybatisdemoApplication in 4.218 seconds (JVM running for 8.858)
+10:55:58.305 logback [http-nio-8090-exec-1] INFO  o.a.c.c.C.[.[.[/sbmybatisdemo] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+10:55:58.306 logback [http-nio-8090-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+10:55:58.306 logback [http-nio-8090-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - Detected StandardServletMultipartResolver
+10:55:58.331 logback [http-nio-8090-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+10:55:58.331 logback [http-nio-8090-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 25 ms
+10:55:58.353 logback [http-nio-8090-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - GET "/sbmybatisdemo/userquery", parameters={}
+10:55:58.356 logback [http-nio-8090-exec-1] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.etc.controller.UserController#query()
+10:55:58.399 logback [http-nio-8090-exec-1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+10:55:58.663 logback [http-nio-8090-exec-1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+10:55:58.677 logback [http-nio-8090-exec-1] DEBUG com.etc.dao.ArticleDao.find - ==>  Preparing: select * from Users
+10:55:58.709 logback [http-nio-8090-exec-1] DEBUG com.etc.dao.ArticleDao.find - ==> Parameters:
+10:55:58.762 logback [http-nio-8090-exec-1] DEBUG com.etc.dao.ArticleDao.find - <==      Total: 3
+10:55:58.780 logback [http-nio-8090-exec-1] DEBUG o.s.w.s.v.ContentNegotiatingViewResolver - Selected 'text/html' given [text/html, application/xhtml+xml, image/webp, image/apng, application/xml;q=0.9, application/signed-exchange;v=b3;q=0.9, */*;q=0.8]
+10:55:59.310 logback [http-nio-8090-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+10:56:04.860 logback [http-nio-8090-exec-5] DEBUG o.s.web.servlet.DispatcherServlet - GET "/sbmybatisdemo/clatoadd", parameters={}
+10:56:04.863 logback [http-nio-8090-exec-5] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler ["classpath:/META-INF/resources/", "classpath:/resources/", "classpath:/static/", "classpath:/public/", "/"]
+10:56:04.867 logback [http-nio-8090-exec-5] DEBUG o.s.w.s.r.ResourceHttpRequestHandler - Resource not found
+10:56:04.867 logback [http-nio-8090-exec-5] DEBUG o.s.web.servlet.DispatcherServlet - Completed 404 NOT_FOUND
+10:56:04.870 logback [http-nio-8090-exec-5] DEBUG o.s.web.servlet.DispatcherServlet - "ERROR" dispatch for GET "/sbmybatisdemo/error", parameters={}
+10:56:04.873 logback [http-nio-8090-exec-5] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#errorHtml(HttpServletRequest, HttpServletResponse)
+10:56:04.895 logback [http-nio-8090-exec-5] DEBUG o.s.w.s.v.ContentNegotiatingViewResolver - Selected 'text/html' given [text/html, text/html;q=0.8]
+10:56:04.899 logback [http-nio-8090-exec-5] DEBUG o.s.web.servlet.DispatcherServlet - Exiting from "ERROR" dispatch, status 404
+10:56:25.802 logback [http-nio-8090-exec-7] DEBUG o.s.web.servlet.DispatcherServlet - GET "/sbmybatisdemo/userquery", parameters={}
+10:56:25.803 logback [http-nio-8090-exec-7] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.etc.controller.UserController#query()
+10:56:25.809 logback [http-nio-8090-exec-7] DEBUG com.etc.dao.ArticleDao.find - ==>  Preparing: select * from Users
+10:56:25.810 logback [http-nio-8090-exec-7] DEBUG com.etc.dao.ArticleDao.find - ==> Parameters:
+10:56:25.812 logback [http-nio-8090-exec-7] DEBUG com.etc.dao.ArticleDao.find - <==      Total: 3
+10:56:25.827 logback [http-nio-8090-exec-7] DEBUG o.s.w.s.v.ContentNegotiatingViewResolver - Selected 'text/html' given [text/html, application/xhtml+xml, image/webp, image/apng, application/xml;q=0.9, application/signed-exchange;v=b3;q=0.9, */*;q=0.8]
+10:56:25.850 logback [http-nio-8090-exec-7] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+10:56:30.012 logback [http-nio-8090-exec-9] DEBUG o.s.web.servlet.DispatcherServlet - GET "/sbmybatisdemo/userquery", parameters={}
+10:56:30.012 logback [http-nio-8090-exec-9] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.etc.controller.UserController#query()
+10:56:30.014 logback [http-nio-8090-exec-9] DEBUG com.etc.dao.ArticleDao.find - ==>  Preparing: select * from Users
+10:56:30.014 logback [http-nio-8090-exec-9] DEBUG com.etc.dao.ArticleDao.find - ==> Parameters:
+10:56:30.017 logback [http-nio-8090-exec-9] DEBUG com.etc.dao.ArticleDao.find - <==      Total: 3
+10:56:30.021 logback [http-nio-8090-exec-9] DEBUG o.s.w.s.v.ContentNegotiatingViewResolver - Selected 'text/html' given [text/html, application/xhtml+xml, image/webp, image/apng, application/xml;q=0.9, application/signed-exchange;v=b3;q=0.9, */*;q=0.8]
+10:56:30.039 logback [http-nio-8090-exec-9] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+10:56:33.033 logback [http-nio-8090-exec-2] DEBUG o.s.web.servlet.DispatcherServlet - GET "/sbmybatisdemo/usertoadd", parameters={}
+10:56:33.034 logback [http-nio-8090-exec-2] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.etc.controller.UserController#toadd()
+10:56:33.035 logback [http-nio-8090-exec-2] DEBUG o.s.w.s.v.ContentNegotiatingViewResolver - Selected 'text/html' given [text/html, application/xhtml+xml, image/webp, image/apng, application/xml;q=0.9, application/signed-exchange;v=b3;q=0.9, */*;q=0.8]
+10:56:33.039 logback [http-nio-8090-exec-2] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+10:56:48.424 logback [http-nio-8090-exec-4] DEBUG o.s.web.servlet.DispatcherServlet - POST "/sbmybatisdemo/useradd", parameters={masked}
+10:56:48.424 logback [http-nio-8090-exec-4] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.etc.controller.UserController#add(User)
+10:56:48.490 logback [http-nio-8090-exec-4] DEBUG com.etc.dao.ArticleDao.add - ==>  Preparing: insert into Users values(default,?,?)
+10:56:48.491 logback [http-nio-8090-exec-4] DEBUG com.etc.dao.ArticleDao.add - ==> Parameters: cy18(String), 123456(String)
+10:56:48.508 logback [http-nio-8090-exec-4] DEBUG com.etc.dao.ArticleDao.add - <==    Updates: 1
+10:56:48.521 logback [http-nio-8090-exec-4] DEBUG o.s.web.servlet.view.RedirectView - View [RedirectView], model {msg=新加成功!}
+10:56:48.527 logback [http-nio-8090-exec-4] DEBUG o.s.web.servlet.DispatcherServlet - Completed 302 FOUND
+10:56:48.530 logback [http-nio-8090-exec-6] DEBUG o.s.web.servlet.DispatcherServlet - GET "/sbmybatisdemo/userget/4?msg=%E6%96%B0%E5%8A%A0%E6%88%90%E5%8A%9F%21", parameters={masked}
+10:56:48.532 logback [http-nio-8090-exec-6] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.etc.controller.UserController#get(Integer)
+10:56:48.538 logback [http-nio-8090-exec-6] DEBUG com.etc.dao.ArticleDao.get - ==>  Preparing: select * from Users where uid=?
+10:56:48.538 logback [http-nio-8090-exec-6] DEBUG com.etc.dao.ArticleDao.get - ==> Parameters: 4(Integer)
+10:56:48.539 logback [http-nio-8090-exec-6] DEBUG com.etc.dao.ArticleDao.get - <==      Total: 1
+10:56:48.540 logback [http-nio-8090-exec-6] DEBUG o.s.w.s.v.ContentNegotiatingViewResolver - Selected 'text/html' given [text/html, application/xhtml+xml, image/webp, image/apng, application/xml;q=0.9, application/signed-exchange;v=b3;q=0.9, */*;q=0.8]
+10:56:48.553 logback [http-nio-8090-exec-6] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+10:56:52.659 logback [http-nio-8090-exec-8] DEBUG o.s.web.servlet.DispatcherServlet - GET "/sbmybatisdemo/userget/4?msg=%E6%96%B0%E5%8A%A0%E6%88%90%E5%8A%9F%21", parameters={masked}
+10:56:52.660 logback [http-nio-8090-exec-8] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.etc.controller.UserController#get(Integer)
+10:56:52.661 logback [http-nio-8090-exec-8] DEBUG com.etc.dao.ArticleDao.get - ==>  Preparing: select * from Users where uid=?
+10:56:52.663 logback [http-nio-8090-exec-8] DEBUG com.etc.dao.ArticleDao.get - ==> Parameters: 4(Integer)
+10:56:52.666 logback [http-nio-8090-exec-8] DEBUG com.etc.dao.ArticleDao.get - <==      Total: 1
+10:56:52.667 logback [http-nio-8090-exec-8] DEBUG o.s.w.s.v.ContentNegotiatingViewResolver - Selected 'text/html' given [text/html, application/xhtml+xml, image/webp, image/apng, application/xml;q=0.9, application/signed-exchange;v=b3;q=0.9, */*;q=0.8]
+10:56:52.671 logback [http-nio-8090-exec-8] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+10:56:54.303 logback [http-nio-8090-exec-10] DEBUG o.s.web.servlet.DispatcherServlet - GET "/sbmybatisdemo/userget/4?msg=%E6%96%B0%E5%8A%A0%E6%88%90%E5%8A%9F%21", parameters={masked}
+10:56:54.304 logback [http-nio-8090-exec-10] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.etc.controller.UserController#get(Integer)
+10:56:54.336 logback [http-nio-8090-exec-10] DEBUG com.etc.dao.ArticleDao.get - ==>  Preparing: select * from Users where uid=?
+10:56:54.336 logback [http-nio-8090-exec-10] DEBUG com.etc.dao.ArticleDao.get - ==> Parameters: 4(Integer)
+10:56:54.338 logback [http-nio-8090-exec-10] DEBUG com.etc.dao.ArticleDao.get - <==      Total: 1
+10:56:54.340 logback [http-nio-8090-exec-10] DEBUG o.s.w.s.v.ContentNegotiatingViewResolver - Selected 'text/html' given [text/html, application/xhtml+xml, image/webp, image/apng, application/xml;q=0.9, application/signed-exchange;v=b3;q=0.9, */*;q=0.8]
+10:56:54.358 logback [http-nio-8090-exec-10] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+10:56:55.930 logback [http-nio-8090-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - GET "/sbmybatisdemo/userquery", parameters={}
+10:56:55.934 logback [http-nio-8090-exec-1] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.etc.controller.UserController#query()
+10:56:55.935 logback [http-nio-8090-exec-1] DEBUG com.etc.dao.ArticleDao.find - ==>  Preparing: select * from Users
+10:56:55.935 logback [http-nio-8090-exec-1] DEBUG com.etc.dao.ArticleDao.find - ==> Parameters:
+10:56:55.938 logback [http-nio-8090-exec-1] DEBUG com.etc.dao.ArticleDao.find - <==      Total: 4
+10:56:55.939 logback [http-nio-8090-exec-1] DEBUG o.s.w.s.v.ContentNegotiatingViewResolver - Selected 'text/html' given [text/html, application/xhtml+xml, image/webp, image/apng, application/xml;q=0.9, application/signed-exchange;v=b3;q=0.9, */*;q=0.8]
+10:56:55.944 logback [http-nio-8090-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+10:57:07.495 logback [http-nio-8090-exec-5] DEBUG o.s.web.servlet.DispatcherServlet - GET "/sbmybatisdemo/userget/4", parameters={}
+10:57:07.496 logback [http-nio-8090-exec-5] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.etc.controller.UserController#get(Integer)
+10:57:07.500 logback [http-nio-8090-exec-5] DEBUG com.etc.dao.ArticleDao.get - ==>  Preparing: select * from Users where uid=?
+10:57:07.501 logback [http-nio-8090-exec-5] DEBUG com.etc.dao.ArticleDao.get - ==> Parameters: 4(Integer)
+10:57:07.503 logback [http-nio-8090-exec-5] DEBUG com.etc.dao.ArticleDao.get - <==      Total: 1
+10:57:07.506 logback [http-nio-8090-exec-5] DEBUG o.s.w.s.v.ContentNegotiatingViewResolver - Selected 'text/html' given [text/html, application/xhtml+xml, image/webp, image/apng, application/xml;q=0.9, application/signed-exchange;v=b3;q=0.9, */*;q=0.8]
+10:57:07.531 logback [http-nio-8090-exec-5] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+10:57:21.088 logback [http-nio-8090-exec-7] DEBUG o.s.web.servlet.DispatcherServlet - POST "/sbmybatisdemo/usermod", parameters={masked}
+10:57:21.089 logback [http-nio-8090-exec-7] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.etc.controller.UserController#mod(User)
+10:57:21.091 logback [http-nio-8090-exec-7] DEBUG com.etc.dao.ArticleDao.mod - ==>  Preparing: update users set uname=?,password=? where uid=?
+10:57:21.092 logback [http-nio-8090-exec-7] DEBUG com.etc.dao.ArticleDao.mod - ==> Parameters: 陈毅(String), 123456(String), 4(Integer)
+10:57:21.156 logback [http-nio-8090-exec-7] DEBUG com.etc.dao.ArticleDao.mod - <==    Updates: 1
+10:57:21.157 logback [http-nio-8090-exec-7] DEBUG o.s.w.s.view.InternalResourceView - View [InternalResourceView], model {user=com.etc.entity.User@2db76ce9, org.springframework.validation.BindingResult.user=org.springframework.validation.BeanPropertyBindingResult: 0 errors, msg=修改成功!}
+10:57:21.158 logback [http-nio-8090-exec-7] DEBUG o.s.w.s.view.InternalResourceView - Forwarding to [/userget/4]
+10:57:21.158 logback [http-nio-8090-exec-7] DEBUG o.s.web.servlet.DispatcherServlet - "FORWARD" dispatch for POST "/sbmybatisdemo/userget/4", parameters={masked}
+10:57:21.159 logback [http-nio-8090-exec-7] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.etc.controller.UserController#get(Integer)
+10:57:21.160 logback [http-nio-8090-exec-7] DEBUG com.etc.dao.ArticleDao.get - ==>  Preparing: select * from Users where uid=?
+10:57:21.160 logback [http-nio-8090-exec-7] DEBUG com.etc.dao.ArticleDao.get - ==> Parameters: 4(Integer)
+10:57:21.163 logback [http-nio-8090-exec-7] DEBUG com.etc.dao.ArticleDao.get - <==      Total: 1
+10:57:21.164 logback [http-nio-8090-exec-7] DEBUG o.s.w.s.v.ContentNegotiatingViewResolver - Selected 'text/html' given [text/html, application/xhtml+xml, image/webp, image/apng, application/xml;q=0.9, application/signed-exchange;v=b3;q=0.9, */*;q=0.8]
+10:57:21.168 logback [http-nio-8090-exec-7] DEBUG o.s.web.servlet.DispatcherServlet - Exiting from "FORWARD" dispatch, status 200
+10:57:21.169 logback [http-nio-8090-exec-7] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+10:57:24.467 logback [http-nio-8090-exec-9] DEBUG o.s.web.servlet.DispatcherServlet - GET "/sbmybatisdemo/userquery", parameters={}
+10:57:24.469 logback [http-nio-8090-exec-9] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.etc.controller.UserController#query()
+10:57:24.470 logback [http-nio-8090-exec-9] DEBUG com.etc.dao.ArticleDao.find - ==>  Preparing: select * from Users
+10:57:24.471 logback [http-nio-8090-exec-9] DEBUG com.etc.dao.ArticleDao.find - ==> Parameters:
+10:57:24.476 logback [http-nio-8090-exec-9] DEBUG com.etc.dao.ArticleDao.find - <==      Total: 4
+10:57:24.477 logback [http-nio-8090-exec-9] DEBUG o.s.w.s.v.ContentNegotiatingViewResolver - Selected 'text/html' given [text/html, application/xhtml+xml, image/webp, image/apng, application/xml;q=0.9, application/signed-exchange;v=b3;q=0.9, */*;q=0.8]
+10:57:24.487 logback [http-nio-8090-exec-9] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+10:57:27.976 logback [http-nio-8090-exec-2] DEBUG o.s.web.servlet.DispatcherServlet - GET "/sbmybatisdemo/usertoadd", parameters={}
+10:57:27.977 logback [http-nio-8090-exec-2] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.etc.controller.UserController#toadd()
+10:57:27.977 logback [http-nio-8090-exec-2] DEBUG o.s.w.s.v.ContentNegotiatingViewResolver - Selected 'text/html' given [text/html, application/xhtml+xml, image/webp, image/apng, application/xml;q=0.9, application/signed-exchange;v=b3;q=0.9, */*;q=0.8]
+10:57:27.981 logback [http-nio-8090-exec-2] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+10:57:32.107 logback [http-nio-8090-exec-4] DEBUG o.s.web.servlet.DispatcherServlet - POST "/sbmybatisdemo/useradd", parameters={masked}
+10:57:32.109 logback [http-nio-8090-exec-4] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.etc.controller.UserController#add(User)
+10:57:32.113 logback [http-nio-8090-exec-4] DEBUG com.etc.dao.ArticleDao.add - ==>  Preparing: insert into Users values(default,?,?)
+10:57:32.114 logback [http-nio-8090-exec-4] DEBUG com.etc.dao.ArticleDao.add - ==> Parameters: a(String), a(String)
+10:57:32.148 logback [http-nio-8090-exec-4] DEBUG com.etc.dao.ArticleDao.add - <==    Updates: 1
+10:57:32.148 logback [http-nio-8090-exec-4] DEBUG o.s.web.servlet.view.RedirectView - View [RedirectView], model {msg=新加成功!}
+10:57:32.148 logback [http-nio-8090-exec-4] DEBUG o.s.web.servlet.DispatcherServlet - Completed 302 FOUND
+10:57:32.151 logback [http-nio-8090-exec-6] DEBUG o.s.web.servlet.DispatcherServlet - GET "/sbmybatisdemo/userget/5?msg=%E6%96%B0%E5%8A%A0%E6%88%90%E5%8A%9F%21", parameters={masked}
+10:57:32.152 logback [http-nio-8090-exec-6] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.etc.controller.UserController#get(Integer)
+10:57:32.152 logback [http-nio-8090-exec-6] DEBUG com.etc.dao.ArticleDao.get - ==>  Preparing: select * from Users where uid=?
+10:57:32.152 logback [http-nio-8090-exec-6] DEBUG com.etc.dao.ArticleDao.get - ==> Parameters: 5(Integer)
+10:57:32.153 logback [http-nio-8090-exec-6] DEBUG com.etc.dao.ArticleDao.get - <==      Total: 1
+10:57:32.154 logback [http-nio-8090-exec-6] DEBUG o.s.w.s.v.ContentNegotiatingViewResolver - Selected 'text/html' given [text/html, application/xhtml+xml, image/webp, image/apng, application/xml;q=0.9, application/signed-exchange;v=b3;q=0.9, */*;q=0.8]
+10:57:32.157 logback [http-nio-8090-exec-6] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+10:57:33.646 logback [http-nio-8090-exec-8] DEBUG o.s.web.servlet.DispatcherServlet - GET "/sbmybatisdemo/userquery", parameters={}
+10:57:33.646 logback [http-nio-8090-exec-8] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.etc.controller.UserController#query()
+10:57:33.647 logback [http-nio-8090-exec-8] DEBUG com.etc.dao.ArticleDao.find - ==>  Preparing: select * from Users
+10:57:33.648 logback [http-nio-8090-exec-8] DEBUG com.etc.dao.ArticleDao.find - ==> Parameters:
+10:57:33.650 logback [http-nio-8090-exec-8] DEBUG com.etc.dao.ArticleDao.find - <==      Total: 5
+10:57:33.657 logback [http-nio-8090-exec-8] DEBUG o.s.w.s.v.ContentNegotiatingViewResolver - Selected 'text/html' given [text/html, application/xhtml+xml, image/webp, image/apng, application/xml;q=0.9, application/signed-exchange;v=b3;q=0.9, */*;q=0.8]
+10:57:33.661 logback [http-nio-8090-exec-8] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+10:57:39.103 logback [http-nio-8090-exec-10] DEBUG o.s.web.servlet.DispatcherServlet - GET "/sbmybatisdemo/userdel/5", parameters={}
+10:57:39.107 logback [http-nio-8090-exec-10] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.etc.controller.UserController#del(Integer)
+10:57:39.110 logback [http-nio-8090-exec-10] DEBUG com.etc.dao.ArticleDao.del - ==>  Preparing: delete from Users where uid=?
+10:57:39.111 logback [http-nio-8090-exec-10] DEBUG com.etc.dao.ArticleDao.del - ==> Parameters: 5(Integer)
+10:57:39.131 logback [http-nio-8090-exec-10] DEBUG com.etc.dao.ArticleDao.del - <==    Updates: 1
+10:57:39.135 logback [http-nio-8090-exec-10] DEBUG o.s.w.s.view.InternalResourceView - View [InternalResourceView], model {msg=删除成功!}
+10:57:39.136 logback [http-nio-8090-exec-10] DEBUG o.s.w.s.view.InternalResourceView - Forwarding to [/userquery]
+10:57:39.136 logback [http-nio-8090-exec-10] DEBUG o.s.web.servlet.DispatcherServlet - "FORWARD" dispatch for GET "/sbmybatisdemo/userquery", parameters={}
+10:57:39.136 logback [http-nio-8090-exec-10] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.etc.controller.UserController#query()
+10:57:39.137 logback [http-nio-8090-exec-10] DEBUG com.etc.dao.ArticleDao.find - ==>  Preparing: select * from Users
+10:57:39.137 logback [http-nio-8090-exec-10] DEBUG com.etc.dao.ArticleDao.find - ==> Parameters:
+10:57:39.146 logback [http-nio-8090-exec-10] DEBUG com.etc.dao.ArticleDao.find - <==      Total: 4
+10:57:39.151 logback [http-nio-8090-exec-10] DEBUG o.s.w.s.v.ContentNegotiatingViewResolver - Selected 'text/html' given [text/html, application/xhtml+xml, image/webp, image/apng, application/xml;q=0.9, application/signed-exchange;v=b3;q=0.9, */*;q=0.8]
+10:57:39.155 logback [http-nio-8090-exec-10] DEBUG o.s.web.servlet.DispatcherServlet - Exiting from "FORWARD" dispatch, status 200
+10:57:39.155 logback [http-nio-8090-exec-10] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+10:58:24.306 logback [Thread-15] INFO  o.s.s.c.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+10:58:24.306 logback [Thread-15] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+10:58:24.348 logback [Thread-15] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+10:58:24.597 logback [restartedMain] INFO  com.etc.SbmybatisdemoApplication - Starting SbmybatisdemoApplication on USER-20190611ED with PID 4648 (E:\IdeaProjects2\sbmybatisdemo\target\classes started by Administrator in E:\IdeaProjects2\lagou)
+10:58:24.598 logback [restartedMain] DEBUG com.etc.SbmybatisdemoApplication - Running with Spring Boot v2.3.4.RELEASE, Spring v5.2.9.RELEASE
+10:58:24.598 logback [restartedMain] INFO  com.etc.SbmybatisdemoApplication - No active profile set, falling back to default profiles: default
+10:58:25.288 logback [restartedMain] WARN  o.m.s.mapper.ClassPathMapperScanner - No MyBatis mapper was found in '[com.etc]' package. Please check your configuration.
+10:58:25.476 logback [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8090 (http)
+10:58:25.477 logback [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8090"]
+10:58:25.478 logback [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+10:58:25.478 logback [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.38]
+10:58:25.559 logback [restartedMain] INFO  o.a.c.c.C.[.[.[/sbmybatisdemo] - Initializing Spring embedded WebApplicationContext
+10:58:25.559 logback [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 956 ms
+10:58:25.579 logback [restartedMain] WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'userController': Injection of resource dependencies failed; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'userServiceImpl': Injection of resource dependencies failed; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'com.etc.dao.ArticleDao' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@javax.annotation.Resource(shareable=true, lookup=, name=, description=, authenticationType=CONTAINER, type=class java.lang.Object, mappedName=)}
+10:58:25.580 logback [restartedMain] INFO  o.a.catalina.core.StandardService - Stopping service [Tomcat]
+10:58:25.592 logback [restartedMain] INFO  o.s.b.a.l.ConditionEvaluationReportLoggingListener - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+10:58:26.384 logback [restartedMain] ERROR o.s.b.d.LoggingFailureAnalysisReporter - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+A component required a bean of type 'com.etc.dao.ArticleDao' that could not be found.
+
+
+Action:
+
+Consider defining a bean of type 'com.etc.dao.ArticleDao' in your configuration.
+
+10:59:01.543 logback [restartedMain] INFO  com.etc.SbmybatisdemoApplication - Starting SbmybatisdemoApplication on USER-20190611ED with PID 4648 (E:\IdeaProjects2\sbmybatisdemo\target\classes started by Administrator in E:\IdeaProjects2\lagou)
+10:59:01.543 logback [restartedMain] DEBUG com.etc.SbmybatisdemoApplication - Running with Spring Boot v2.3.4.RELEASE, Spring v5.2.9.RELEASE
+10:59:01.543 logback [restartedMain] INFO  com.etc.SbmybatisdemoApplication - No active profile set, falling back to default profiles: default
+10:59:02.056 logback [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8090 (http)
+10:59:02.056 logback [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8090"]
+10:59:02.057 logback [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+10:59:02.057 logback [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.38]
+10:59:02.073 logback [restartedMain] INFO  o.a.c.c.C.[.[.[/sbmybatisdemo] - Initializing Spring embedded WebApplicationContext
+10:59:02.074 logback [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 511 ms
+10:59:02.297 logback [restartedMain] INFO  o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+10:59:02.300 logback [restartedMain] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerAdapter - ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+10:59:02.329 logback [restartedMain] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - 8 mappings in 'requestMappingHandlerMapping'
+10:59:02.345 logback [restartedMain] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+10:59:02.352 logback [restartedMain] DEBUG o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+10:59:02.406 logback [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+10:59:02.422 logback [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8090"]
+10:59:02.433 logback [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8090 (http) with context path '/sbmybatisdemo'
+10:59:02.448 logback [restartedMain] INFO  com.etc.SbmybatisdemoApplication - Started SbmybatisdemoApplication in 1.065 seconds (JVM running for 221.161)
+10:59:02.451 logback [restartedMain] INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+10:59:25.866 logback [http-nio-8090-exec-10] INFO  o.a.c.c.C.[.[.[/sbmybatisdemo] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+10:59:25.867 logback [http-nio-8090-exec-10] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+10:59:25.867 logback [http-nio-8090-exec-10] DEBUG o.s.web.servlet.DispatcherServlet - Detected StandardServletMultipartResolver
+10:59:25.870 logback [http-nio-8090-exec-10] DEBUG o.s.web.servlet.DispatcherServlet - enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+10:59:25.870 logback [http-nio-8090-exec-10] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 3 ms
+10:59:25.871 logback [http-nio-8090-exec-10] DEBUG o.s.web.servlet.DispatcherServlet - GET "/sbmybatisdemo/usertoadd", parameters={}
+10:59:25.871 logback [http-nio-8090-exec-10] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.etc.controller.UserController#toadd()
+10:59:25.878 logback [http-nio-8090-exec-10] DEBUG o.s.w.s.v.ContentNegotiatingViewResolver - Selected 'text/html' given [text/html, application/xhtml+xml, image/webp, image/apng, application/xml;q=0.9, application/signed-exchange;v=b3;q=0.9, */*;q=0.8]
+10:59:25.897 logback [http-nio-8090-exec-10] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+10:59:27.071 logback [http-nio-8090-exec-8] DEBUG o.s.web.servlet.DispatcherServlet - GET "/sbmybatisdemo/userquery", parameters={}
+10:59:27.072 logback [http-nio-8090-exec-8] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.etc.controller.UserController#query()
+10:59:27.073 logback [http-nio-8090-exec-8] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Starting...
+10:59:27.083 logback [http-nio-8090-exec-8] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Start completed.
+10:59:27.083 logback [http-nio-8090-exec-8] DEBUG com.etc.dao.ArticleDao.find - ==>  Preparing: select * from Users
+10:59:27.084 logback [http-nio-8090-exec-8] DEBUG com.etc.dao.ArticleDao.find - ==> Parameters:
+10:59:27.086 logback [http-nio-8090-exec-8] DEBUG com.etc.dao.ArticleDao.find - <==      Total: 4
+10:59:27.087 logback [http-nio-8090-exec-8] DEBUG o.s.w.s.v.ContentNegotiatingViewResolver - Selected 'text/html' given [text/html, application/xhtml+xml, image/webp, image/apng, application/xml;q=0.9, application/signed-exchange;v=b3;q=0.9, */*;q=0.8]
+10:59:27.093 logback [http-nio-8090-exec-8] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+10:59:29.005 logback [http-nio-8090-exec-6] DEBUG o.s.web.servlet.DispatcherServlet - GET "/sbmybatisdemo/userget/4", parameters={}
+10:59:29.005 logback [http-nio-8090-exec-6] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.etc.controller.UserController#get(Integer)
+10:59:29.007 logback [http-nio-8090-exec-6] DEBUG com.etc.dao.ArticleDao.get - ==>  Preparing: select * from Users where uid=?
+10:59:29.008 logback [http-nio-8090-exec-6] DEBUG com.etc.dao.ArticleDao.get - ==> Parameters: 4(Integer)
+10:59:29.009 logback [http-nio-8090-exec-6] DEBUG com.etc.dao.ArticleDao.get - <==      Total: 1
+10:59:29.010 logback [http-nio-8090-exec-6] DEBUG o.s.w.s.v.ContentNegotiatingViewResolver - Selected 'text/html' given [text/html, application/xhtml+xml, image/webp, image/apng, application/xml;q=0.9, application/signed-exchange;v=b3;q=0.9, */*;q=0.8]
+10:59:29.017 logback [http-nio-8090-exec-6] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+10:59:32.835 logback [http-nio-8090-exec-4] DEBUG o.s.web.servlet.DispatcherServlet - GET "/sbmybatisdemo/userquery", parameters={}
+10:59:32.836 logback [http-nio-8090-exec-4] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.etc.controller.UserController#query()
+10:59:32.839 logback [http-nio-8090-exec-4] DEBUG com.etc.dao.ArticleDao.find - ==>  Preparing: select * from Users
+10:59:32.841 logback [http-nio-8090-exec-4] DEBUG com.etc.dao.ArticleDao.find - ==> Parameters:
+10:59:32.846 logback [http-nio-8090-exec-4] DEBUG com.etc.dao.ArticleDao.find - <==      Total: 4
+10:59:32.849 logback [http-nio-8090-exec-4] DEBUG o.s.w.s.v.ContentNegotiatingViewResolver - Selected 'text/html' given [text/html, application/xhtml+xml, image/webp, image/apng, application/xml;q=0.9, application/signed-exchange;v=b3;q=0.9, */*;q=0.8]
+10:59:32.857 logback [http-nio-8090-exec-4] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+10:59:35.890 logback [http-nio-8090-exec-2] DEBUG o.s.web.servlet.DispatcherServlet - GET "/sbmybatisdemo/userget/4", parameters={}
+10:59:35.890 logback [http-nio-8090-exec-2] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.etc.controller.UserController#get(Integer)
+10:59:35.892 logback [http-nio-8090-exec-2] DEBUG com.etc.dao.ArticleDao.get - ==>  Preparing: select * from Users where uid=?
+10:59:35.892 logback [http-nio-8090-exec-2] DEBUG com.etc.dao.ArticleDao.get - ==> Parameters: 4(Integer)
+10:59:35.893 logback [http-nio-8090-exec-2] DEBUG com.etc.dao.ArticleDao.get - <==      Total: 1
+10:59:35.894 logback [http-nio-8090-exec-2] DEBUG o.s.w.s.v.ContentNegotiatingViewResolver - Selected 'text/html' given [text/html, application/xhtml+xml, image/webp, image/apng, application/xml;q=0.9, application/signed-exchange;v=b3;q=0.9, */*;q=0.8]
+10:59:35.899 logback [http-nio-8090-exec-2] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+10:59:44.684 logback [http-nio-8090-exec-9] DEBUG o.s.web.servlet.DispatcherServlet - POST "/sbmybatisdemo/usermod", parameters={masked}
+10:59:44.685 logback [http-nio-8090-exec-9] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.etc.controller.UserController#mod(User)
+10:59:44.692 logback [http-nio-8090-exec-9] DEBUG com.etc.dao.ArticleDao.mod - ==>  Preparing: update users set uname=?,password=? where uid=?
+10:59:44.692 logback [http-nio-8090-exec-9] DEBUG com.etc.dao.ArticleDao.mod - ==> Parameters: 陈毅同志(String), 123456(String), 4(Integer)
+10:59:44.723 logback [http-nio-8090-exec-9] DEBUG com.etc.dao.ArticleDao.mod - <==    Updates: 1
+10:59:44.725 logback [http-nio-8090-exec-9] DEBUG o.s.w.s.view.InternalResourceView - View [InternalResourceView], model {user=com.etc.entity.User@bd8c6d4, org.springframework.validation.BindingResult.user=org.springframework.validation.BeanPropertyBindingResult: 0 errors, msg=修改成功!}
+10:59:44.725 logback [http-nio-8090-exec-9] DEBUG o.s.w.s.view.InternalResourceView - Forwarding to [/userget/4]
+10:59:44.726 logback [http-nio-8090-exec-9] DEBUG o.s.web.servlet.DispatcherServlet - "FORWARD" dispatch for POST "/sbmybatisdemo/userget/4", parameters={masked}
+10:59:44.727 logback [http-nio-8090-exec-9] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.etc.controller.UserController#get(Integer)
+10:59:44.729 logback [http-nio-8090-exec-9] DEBUG com.etc.dao.ArticleDao.get - ==>  Preparing: select * from Users where uid=?
+10:59:44.729 logback [http-nio-8090-exec-9] DEBUG com.etc.dao.ArticleDao.get - ==> Parameters: 4(Integer)
+10:59:44.731 logback [http-nio-8090-exec-9] DEBUG com.etc.dao.ArticleDao.get - <==      Total: 1
+10:59:44.732 logback [http-nio-8090-exec-9] DEBUG o.s.w.s.v.ContentNegotiatingViewResolver - Selected 'text/html' given [text/html, application/xhtml+xml, image/webp, image/apng, application/xml;q=0.9, application/signed-exchange;v=b3;q=0.9, */*;q=0.8]
+10:59:44.734 logback [http-nio-8090-exec-9] DEBUG o.s.web.servlet.DispatcherServlet - Exiting from "FORWARD" dispatch, status 200
+10:59:44.734 logback [http-nio-8090-exec-9] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+10:59:46.161 logback [http-nio-8090-exec-7] DEBUG o.s.web.servlet.DispatcherServlet - GET "/sbmybatisdemo/userquery", parameters={}
+10:59:46.161 logback [http-nio-8090-exec-7] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.etc.controller.UserController#query()
+10:59:46.164 logback [http-nio-8090-exec-7] DEBUG com.etc.dao.ArticleDao.find - ==>  Preparing: select * from Users
+10:59:46.164 logback [http-nio-8090-exec-7] DEBUG com.etc.dao.ArticleDao.find - ==> Parameters:
+10:59:46.166 logback [http-nio-8090-exec-7] DEBUG com.etc.dao.ArticleDao.find - <==      Total: 4
+10:59:46.167 logback [http-nio-8090-exec-7] DEBUG o.s.w.s.v.ContentNegotiatingViewResolver - Selected 'text/html' given [text/html, application/xhtml+xml, image/webp, image/apng, application/xml;q=0.9, application/signed-exchange;v=b3;q=0.9, */*;q=0.8]
+10:59:46.170 logback [http-nio-8090-exec-7] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+11:02:29.738 logback [Thread-22] INFO  o.s.s.c.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+11:02:29.739 logback [Thread-22] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Shutdown initiated...
+11:02:29.769 logback [Thread-22] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Shutdown completed.
+11:02:30.049 logback [restartedMain] INFO  com.etc.SbmybatisdemoApplication - Starting SbmybatisdemoApplication on USER-20190611ED with PID 4648 (E:\IdeaProjects2\sbmybatisdemo\target\classes started by Administrator in E:\IdeaProjects2\lagou)
+11:02:30.049 logback [restartedMain] DEBUG com.etc.SbmybatisdemoApplication - Running with Spring Boot v2.3.4.RELEASE, Spring v5.2.9.RELEASE
+11:02:30.050 logback [restartedMain] INFO  com.etc.SbmybatisdemoApplication - No active profile set, falling back to default profiles: default
+11:02:30.648 logback [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8090 (http)
+11:02:30.649 logback [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8090"]
+11:02:30.649 logback [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+11:02:30.649 logback [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.38]
+11:02:30.667 logback [restartedMain] INFO  o.a.c.c.C.[.[.[/sbmybatisdemo] - Initializing Spring embedded WebApplicationContext
+11:02:30.667 logback [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 613 ms
+11:02:30.687 logback [restartedMain] WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'userController': Injection of resource dependencies failed; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'com.etc.service.UserService' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@javax.annotation.Resource(shareable=true, lookup=, name=, description=, authenticationType=CONTAINER, type=class java.lang.Object, mappedName=)}
+11:02:30.688 logback [restartedMain] INFO  o.a.catalina.core.StandardService - Stopping service [Tomcat]
+11:02:30.700 logback [restartedMain] INFO  o.s.b.a.l.ConditionEvaluationReportLoggingListener - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+11:02:30.865 logback [restartedMain] ERROR o.s.b.d.LoggingFailureAnalysisReporter - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+A component required a bean of type 'com.etc.service.UserService' that could not be found.
+
+
+Action:
+
+Consider defining a bean of type 'com.etc.service.UserService' in your configuration.
+
+11:08:50.388 logback [restartedMain] INFO  com.etc.SbmybatisdemoApplication - Starting SbmybatisdemoApplication on USER-20190611ED with PID 4648 (E:\IdeaProjects2\sbmybatisdemo\target\classes started by Administrator in E:\IdeaProjects2\lagou)
+11:08:50.388 logback [restartedMain] DEBUG com.etc.SbmybatisdemoApplication - Running with Spring Boot v2.3.4.RELEASE, Spring v5.2.9.RELEASE
+11:08:50.388 logback [restartedMain] INFO  com.etc.SbmybatisdemoApplication - No active profile set, falling back to default profiles: default
+11:08:50.771 logback [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8090 (http)
+11:08:50.771 logback [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8090"]
+11:08:50.772 logback [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+11:08:50.772 logback [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.38]
+11:08:50.790 logback [restartedMain] INFO  o.a.c.c.C.[.[.[/sbmybatisdemo] - Initializing Spring embedded WebApplicationContext
+11:08:50.790 logback [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 399 ms
+11:08:50.955 logback [restartedMain] INFO  o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+11:08:50.958 logback [restartedMain] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerAdapter - ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+11:08:50.969 logback [restartedMain] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - 8 mappings in 'requestMappingHandlerMapping'
+11:08:50.986 logback [restartedMain] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+11:08:51.017 logback [restartedMain] DEBUG o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+11:08:51.100 logback [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+11:08:51.118 logback [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8090"]
+11:08:51.123 logback [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8090 (http) with context path '/sbmybatisdemo'
+11:08:51.128 logback [restartedMain] INFO  com.etc.SbmybatisdemoApplication - Started SbmybatisdemoApplication in 0.821 seconds (JVM running for 809.833)
+11:08:51.129 logback [restartedMain] INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+11:11:58.108 logback [Thread-30] INFO  o.s.s.c.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+11:11:58.614 logback [restartedMain] INFO  com.etc.SbmybatisdemoApplication - Starting SbmybatisdemoApplication on USER-20190611ED with PID 4648 (E:\IdeaProjects2\sbmybatisdemo\target\classes started by Administrator in E:\IdeaProjects2\lagou)
+11:11:58.614 logback [restartedMain] DEBUG com.etc.SbmybatisdemoApplication - Running with Spring Boot v2.3.4.RELEASE, Spring v5.2.9.RELEASE
+11:11:58.614 logback [restartedMain] INFO  com.etc.SbmybatisdemoApplication - No active profile set, falling back to default profiles: default
+11:11:59.026 logback [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8090 (http)
+11:11:59.027 logback [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8090"]
+11:11:59.027 logback [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+11:11:59.027 logback [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.38]
+11:11:59.047 logback [restartedMain] INFO  o.a.c.c.C.[.[.[/sbmybatisdemo] - Initializing Spring embedded WebApplicationContext
+11:11:59.047 logback [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 429 ms
+11:11:59.318 logback [restartedMain] INFO  o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+11:11:59.321 logback [restartedMain] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerAdapter - ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+11:11:59.332 logback [restartedMain] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - 8 mappings in 'requestMappingHandlerMapping'
+11:11:59.343 logback [restartedMain] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+11:11:59.350 logback [restartedMain] DEBUG o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+11:11:59.419 logback [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+11:11:59.448 logback [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8090"]
+11:11:59.491 logback [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8090 (http) with context path '/sbmybatisdemo'
+11:11:59.496 logback [restartedMain] INFO  com.etc.SbmybatisdemoApplication - Started SbmybatisdemoApplication in 0.996 seconds (JVM running for 998.199)
+11:11:59.498 logback [restartedMain] INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+11:12:09.452 logback [http-nio-8090-exec-1] INFO  o.a.c.c.C.[.[.[/sbmybatisdemo] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+11:12:09.455 logback [http-nio-8090-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+11:12:09.455 logback [http-nio-8090-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - Detected StandardServletMultipartResolver
+11:12:09.458 logback [http-nio-8090-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+11:12:09.460 logback [http-nio-8090-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 5 ms
+11:12:09.460 logback [http-nio-8090-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - GET "/sbmybatisdemo/userquery", parameters={}
+11:12:09.461 logback [http-nio-8090-exec-1] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.etc.controller.UserController#query(Integer, Integer)
+11:12:09.520 logback [http-nio-8090-exec-1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-3 - Starting...
+11:12:09.543 logback [http-nio-8090-exec-1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-3 - Start completed.
+11:12:09.543 logback [http-nio-8090-exec-1] DEBUG com.etc.dao.ArticleDao.find_COUNT - ==>  Preparing: SELECT count(0) FROM Users
+11:12:09.543 logback [http-nio-8090-exec-1] DEBUG com.etc.dao.ArticleDao.find_COUNT - ==> Parameters:
+11:12:09.545 logback [http-nio-8090-exec-1] DEBUG com.etc.dao.ArticleDao.find_COUNT - <==      Total: 1
+11:12:09.547 logback [http-nio-8090-exec-1] DEBUG com.etc.dao.ArticleDao.find - ==>  Preparing: select * from Users LIMIT ?
+11:12:09.547 logback [http-nio-8090-exec-1] DEBUG com.etc.dao.ArticleDao.find - ==> Parameters: 5(Integer)
+11:12:09.548 logback [http-nio-8090-exec-1] DEBUG com.etc.dao.ArticleDao.find - <==      Total: 4
+11:12:09.550 logback [http-nio-8090-exec-1] DEBUG o.s.w.s.v.ContentNegotiatingViewResolver - Selected 'text/html' given [text/html, application/xhtml+xml, image/webp, image/apng, application/xml;q=0.9, application/signed-exchange;v=b3;q=0.9, */*;q=0.8]
+11:12:09.565 logback [http-nio-8090-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+11:12:34.457 logback [http-nio-8090-exec-3] DEBUG o.s.web.servlet.DispatcherServlet - GET "/sbmybatisdemo/userquery", parameters={}
+11:12:34.457 logback [http-nio-8090-exec-3] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.etc.controller.UserController#query(Integer, Integer)
+11:12:34.461 logback [http-nio-8090-exec-3] DEBUG com.etc.dao.ArticleDao.find_COUNT - ==>  Preparing: SELECT count(0) FROM Users
+11:12:34.462 logback [http-nio-8090-exec-3] DEBUG com.etc.dao.ArticleDao.find_COUNT - ==> Parameters:
+11:12:34.463 logback [http-nio-8090-exec-3] DEBUG com.etc.dao.ArticleDao.find_COUNT - <==      Total: 1
+11:12:34.464 logback [http-nio-8090-exec-3] DEBUG com.etc.dao.ArticleDao.find - ==>  Preparing: select * from Users LIMIT ?
+11:12:34.464 logback [http-nio-8090-exec-3] DEBUG com.etc.dao.ArticleDao.find - ==> Parameters: 5(Integer)
+11:12:34.466 logback [http-nio-8090-exec-3] DEBUG com.etc.dao.ArticleDao.find - <==      Total: 4
+11:12:34.467 logback [http-nio-8090-exec-3] DEBUG o.s.w.s.v.ContentNegotiatingViewResolver - Selected 'text/html' given [text/html, application/xhtml+xml, image/webp, image/apng, application/xml;q=0.9, application/signed-exchange;v=b3;q=0.9, */*;q=0.8]
+11:12:34.473 logback [http-nio-8090-exec-3] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+11:12:36.711 logback [http-nio-8090-exec-5] DEBUG o.s.web.servlet.DispatcherServlet - GET "/sbmybatisdemo/userquery", parameters={}
+11:12:36.712 logback [http-nio-8090-exec-5] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.etc.controller.UserController#query(Integer, Integer)
+11:12:36.718 logback [http-nio-8090-exec-5] DEBUG com.etc.dao.ArticleDao.find_COUNT - ==>  Preparing: SELECT count(0) FROM Users
+11:12:36.718 logback [http-nio-8090-exec-5] DEBUG com.etc.dao.ArticleDao.find_COUNT - ==> Parameters:
+11:12:36.720 logback [http-nio-8090-exec-5] DEBUG com.etc.dao.ArticleDao.find_COUNT - <==      Total: 1
+11:12:36.721 logback [http-nio-8090-exec-5] DEBUG com.etc.dao.ArticleDao.find - ==>  Preparing: select * from Users LIMIT ?
+11:12:36.721 logback [http-nio-8090-exec-5] DEBUG com.etc.dao.ArticleDao.find - ==> Parameters: 5(Integer)
+11:12:36.722 logback [http-nio-8090-exec-5] DEBUG com.etc.dao.ArticleDao.find - <==      Total: 4
+11:12:36.725 logback [http-nio-8090-exec-5] DEBUG o.s.w.s.v.ContentNegotiatingViewResolver - Selected 'text/html' given [text/html, application/xhtml+xml, image/webp, image/apng, application/xml;q=0.9, application/signed-exchange;v=b3;q=0.9, */*;q=0.8]
+11:12:36.744 logback [http-nio-8090-exec-5] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+11:12:42.253 logback [http-nio-8090-exec-7] DEBUG o.s.web.servlet.DispatcherServlet - GET "/sbmybatisdemo/usertoadd", parameters={}
+11:12:42.253 logback [http-nio-8090-exec-7] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.etc.controller.UserController#toadd()
+11:12:42.254 logback [http-nio-8090-exec-7] DEBUG o.s.w.s.v.ContentNegotiatingViewResolver - Selected 'text/html' given [text/html, application/xhtml+xml, image/webp, image/apng, application/xml;q=0.9, application/signed-exchange;v=b3;q=0.9, */*;q=0.8]
+11:12:42.258 logback [http-nio-8090-exec-7] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+11:12:51.293 logback [http-nio-8090-exec-9] DEBUG o.s.web.servlet.DispatcherServlet - POST "/sbmybatisdemo/useradd", parameters={masked}
+11:12:51.293 logback [http-nio-8090-exec-9] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.etc.controller.UserController#add(User)
+11:12:51.300 logback [http-nio-8090-exec-9] DEBUG com.etc.dao.ArticleDao.add - ==>  Preparing: insert into Users values(default,?,?)
+11:12:51.300 logback [http-nio-8090-exec-9] DEBUG com.etc.dao.ArticleDao.add - ==> Parameters: 张三(String), 123456(String)
+11:12:51.347 logback [http-nio-8090-exec-9] DEBUG com.etc.dao.ArticleDao.add - <==    Updates: 1
+11:12:51.348 logback [http-nio-8090-exec-9] DEBUG o.s.web.servlet.view.RedirectView - View [RedirectView], model {msg=新加成功!}
+11:12:51.349 logback [http-nio-8090-exec-9] DEBUG o.s.web.servlet.DispatcherServlet - Completed 302 FOUND
+11:12:51.352 logback [http-nio-8090-exec-2] DEBUG o.s.web.servlet.DispatcherServlet - GET "/sbmybatisdemo/userget/6?msg=%E6%96%B0%E5%8A%A0%E6%88%90%E5%8A%9F%21", parameters={masked}
+11:12:51.352 logback [http-nio-8090-exec-2] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.etc.controller.UserController#get(Integer)
+11:12:51.353 logback [http-nio-8090-exec-2] DEBUG com.etc.dao.ArticleDao.get - ==>  Preparing: select * from Users where uid=?
+11:12:51.354 logback [http-nio-8090-exec-2] DEBUG com.etc.dao.ArticleDao.get - ==> Parameters: 6(Integer)
+11:12:51.355 logback [http-nio-8090-exec-2] DEBUG com.etc.dao.ArticleDao.get - <==      Total: 1
+11:12:51.356 logback [http-nio-8090-exec-2] DEBUG o.s.w.s.v.ContentNegotiatingViewResolver - Selected 'text/html' given [text/html, application/xhtml+xml, image/webp, image/apng, application/xml;q=0.9, application/signed-exchange;v=b3;q=0.9, */*;q=0.8]
+11:12:51.359 logback [http-nio-8090-exec-2] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+11:12:52.771 logback [http-nio-8090-exec-4] DEBUG o.s.web.servlet.DispatcherServlet - GET "/sbmybatisdemo/usertoadd", parameters={}
+11:12:52.771 logback [http-nio-8090-exec-4] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.etc.controller.UserController#toadd()
+11:12:52.771 logback [http-nio-8090-exec-4] DEBUG o.s.w.s.v.ContentNegotiatingViewResolver - Selected 'text/html' given [text/html, application/xhtml+xml, image/webp, image/apng, application/xml;q=0.9, application/signed-exchange;v=b3;q=0.9, */*;q=0.8]
+11:12:52.773 logback [http-nio-8090-exec-4] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+11:12:59.363 logback [http-nio-8090-exec-6] DEBUG o.s.web.servlet.DispatcherServlet - POST "/sbmybatisdemo/useradd", parameters={masked}
+11:12:59.364 logback [http-nio-8090-exec-6] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.etc.controller.UserController#add(User)
+11:12:59.367 logback [http-nio-8090-exec-6] DEBUG com.etc.dao.ArticleDao.add - ==>  Preparing: insert into Users values(default,?,?)
+11:12:59.367 logback [http-nio-8090-exec-6] DEBUG com.etc.dao.ArticleDao.add - ==> Parameters: 李四(String), 654321(String)
+11:12:59.419 logback [http-nio-8090-exec-6] DEBUG com.etc.dao.ArticleDao.add - <==    Updates: 1
+11:12:59.419 logback [http-nio-8090-exec-6] DEBUG o.s.web.servlet.view.RedirectView - View [RedirectView], model {msg=新加成功!}
+11:12:59.420 logback [http-nio-8090-exec-6] DEBUG o.s.web.servlet.DispatcherServlet - Completed 302 FOUND
+11:12:59.443 logback [http-nio-8090-exec-8] DEBUG o.s.web.servlet.DispatcherServlet - GET "/sbmybatisdemo/userget/7?msg=%E6%96%B0%E5%8A%A0%E6%88%90%E5%8A%9F%21", parameters={masked}
+11:12:59.444 logback [http-nio-8090-exec-8] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.etc.controller.UserController#get(Integer)
+11:12:59.444 logback [http-nio-8090-exec-8] DEBUG com.etc.dao.ArticleDao.get - ==>  Preparing: select * from Users where uid=?
+11:12:59.444 logback [http-nio-8090-exec-8] DEBUG com.etc.dao.ArticleDao.get - ==> Parameters: 7(Integer)
+11:12:59.447 logback [http-nio-8090-exec-8] DEBUG com.etc.dao.ArticleDao.get - <==      Total: 1
+11:12:59.448 logback [http-nio-8090-exec-8] DEBUG o.s.w.s.v.ContentNegotiatingViewResolver - Selected 'text/html' given [text/html, application/xhtml+xml, image/webp, image/apng, application/xml;q=0.9, application/signed-exchange;v=b3;q=0.9, */*;q=0.8]
+11:12:59.452 logback [http-nio-8090-exec-8] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+11:13:00.916 logback [http-nio-8090-exec-10] DEBUG o.s.web.servlet.DispatcherServlet - GET "/sbmybatisdemo/usertoadd", parameters={}
+11:13:00.916 logback [http-nio-8090-exec-10] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.etc.controller.UserController#toadd()
+11:13:00.917 logback [http-nio-8090-exec-10] DEBUG o.s.w.s.v.ContentNegotiatingViewResolver - Selected 'text/html' given [text/html, application/xhtml+xml, image/webp, image/apng, application/xml;q=0.9, application/signed-exchange;v=b3;q=0.9, */*;q=0.8]
+11:13:00.919 logback [http-nio-8090-exec-10] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+11:13:06.974 logback [http-nio-8090-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - POST "/sbmybatisdemo/useradd", parameters={masked}
+11:13:06.974 logback [http-nio-8090-exec-1] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.etc.controller.UserController#add(User)
+11:13:06.976 logback [http-nio-8090-exec-1] DEBUG com.etc.dao.ArticleDao.add - ==>  Preparing: insert into Users values(default,?,?)
+11:13:06.976 logback [http-nio-8090-exec-1] DEBUG com.etc.dao.ArticleDao.add - ==> Parameters: 王五(String), 147852(String)
+11:13:07.025 logback [http-nio-8090-exec-1] DEBUG com.etc.dao.ArticleDao.add - <==    Updates: 1
+11:13:07.029 logback [http-nio-8090-exec-1] DEBUG o.s.web.servlet.view.RedirectView - View [RedirectView], model {msg=新加成功!}
+11:13:07.035 logback [http-nio-8090-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - Completed 302 FOUND
+11:13:07.067 logback [http-nio-8090-exec-3] DEBUG o.s.web.servlet.DispatcherServlet - GET "/sbmybatisdemo/userget/8?msg=%E6%96%B0%E5%8A%A0%E6%88%90%E5%8A%9F%21", parameters={masked}
+11:13:07.067 logback [http-nio-8090-exec-3] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.etc.controller.UserController#get(Integer)
+11:13:07.068 logback [http-nio-8090-exec-3] DEBUG com.etc.dao.ArticleDao.get - ==>  Preparing: select * from Users where uid=?
+11:13:07.068 logback [http-nio-8090-exec-3] DEBUG com.etc.dao.ArticleDao.get - ==> Parameters: 8(Integer)
+11:13:07.069 logback [http-nio-8090-exec-3] DEBUG com.etc.dao.ArticleDao.get - <==      Total: 1
+11:13:07.069 logback [http-nio-8090-exec-3] DEBUG o.s.w.s.v.ContentNegotiatingViewResolver - Selected 'text/html' given [text/html, application/xhtml+xml, image/webp, image/apng, application/xml;q=0.9, application/signed-exchange;v=b3;q=0.9, */*;q=0.8]
+11:13:07.072 logback [http-nio-8090-exec-3] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+11:13:08.616 logback [http-nio-8090-exec-5] DEBUG o.s.web.servlet.DispatcherServlet - GET "/sbmybatisdemo/usertoadd", parameters={}
+11:13:08.617 logback [http-nio-8090-exec-5] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.etc.controller.UserController#toadd()
+11:13:08.619 logback [http-nio-8090-exec-5] DEBUG o.s.w.s.v.ContentNegotiatingViewResolver - Selected 'text/html' given [text/html, application/xhtml+xml, image/webp, image/apng, application/xml;q=0.9, application/signed-exchange;v=b3;q=0.9, */*;q=0.8]
+11:13:08.624 logback [http-nio-8090-exec-5] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+11:13:14.992 logback [http-nio-8090-exec-9] DEBUG o.s.web.servlet.DispatcherServlet - POST "/sbmybatisdemo/useradd", parameters={masked}
+11:13:15.000 logback [http-nio-8090-exec-9] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.etc.controller.UserController#add(User)
+11:13:15.002 logback [http-nio-8090-exec-9] DEBUG com.etc.dao.ArticleDao.add - ==>  Preparing: insert into Users values(default,?,?)
+11:13:15.003 logback [http-nio-8090-exec-9] DEBUG com.etc.dao.ArticleDao.add - ==> Parameters: 吴六(String), 852369(String)
+11:13:15.059 logback [http-nio-8090-exec-9] DEBUG com.etc.dao.ArticleDao.add - <==    Updates: 1
+11:13:15.059 logback [http-nio-8090-exec-9] DEBUG o.s.web.servlet.view.RedirectView - View [RedirectView], model {msg=新加成功!}
+11:13:15.060 logback [http-nio-8090-exec-9] DEBUG o.s.web.servlet.DispatcherServlet - Completed 302 FOUND
+11:13:15.063 logback [http-nio-8090-exec-2] DEBUG o.s.web.servlet.DispatcherServlet - GET "/sbmybatisdemo/userget/9?msg=%E6%96%B0%E5%8A%A0%E6%88%90%E5%8A%9F%21", parameters={masked}
+11:13:15.063 logback [http-nio-8090-exec-2] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.etc.controller.UserController#get(Integer)
+11:13:15.064 logback [http-nio-8090-exec-2] DEBUG com.etc.dao.ArticleDao.get - ==>  Preparing: select * from Users where uid=?
+11:13:15.065 logback [http-nio-8090-exec-2] DEBUG com.etc.dao.ArticleDao.get - ==> Parameters: 9(Integer)
+11:13:15.066 logback [http-nio-8090-exec-2] DEBUG com.etc.dao.ArticleDao.get - <==      Total: 1
+11:13:15.068 logback [http-nio-8090-exec-2] DEBUG o.s.w.s.v.ContentNegotiatingViewResolver - Selected 'text/html' given [text/html, application/xhtml+xml, image/webp, image/apng, application/xml;q=0.9, application/signed-exchange;v=b3;q=0.9, */*;q=0.8]
+11:13:15.073 logback [http-nio-8090-exec-2] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+11:13:16.471 logback [http-nio-8090-exec-4] DEBUG o.s.web.servlet.DispatcherServlet - GET "/sbmybatisdemo/userquery", parameters={}
+11:13:16.471 logback [http-nio-8090-exec-4] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.etc.controller.UserController#query(Integer, Integer)
+11:13:16.474 logback [http-nio-8090-exec-4] DEBUG com.etc.dao.ArticleDao.find_COUNT - ==>  Preparing: SELECT count(0) FROM Users
+11:13:16.474 logback [http-nio-8090-exec-4] DEBUG com.etc.dao.ArticleDao.find_COUNT - ==> Parameters:
+11:13:16.475 logback [http-nio-8090-exec-4] DEBUG com.etc.dao.ArticleDao.find_COUNT - <==      Total: 1
+11:13:16.475 logback [http-nio-8090-exec-4] DEBUG com.etc.dao.ArticleDao.find - ==>  Preparing: select * from Users LIMIT ?
+11:13:16.475 logback [http-nio-8090-exec-4] DEBUG com.etc.dao.ArticleDao.find - ==> Parameters: 5(Integer)
+11:13:16.476 logback [http-nio-8090-exec-4] DEBUG com.etc.dao.ArticleDao.find - <==      Total: 5
+11:13:16.477 logback [http-nio-8090-exec-4] DEBUG o.s.w.s.v.ContentNegotiatingViewResolver - Selected 'text/html' given [text/html, application/xhtml+xml, image/webp, image/apng, application/xml;q=0.9, application/signed-exchange;v=b3;q=0.9, */*;q=0.8]
+11:13:16.489 logback [http-nio-8090-exec-4] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+11:22:39.965 logback [http-nio-8090-exec-10] DEBUG o.s.web.servlet.DispatcherServlet - GET "/sbmybatisdemo/userquery", parameters={}
+11:22:39.965 logback [http-nio-8090-exec-10] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.etc.controller.UserController#query(Integer, Integer)
+11:22:39.969 logback [http-nio-8090-exec-10] DEBUG com.etc.dao.ArticleDao.find_COUNT - ==>  Preparing: SELECT count(0) FROM Users
+11:22:39.969 logback [http-nio-8090-exec-10] DEBUG com.etc.dao.ArticleDao.find_COUNT - ==> Parameters:
+11:22:39.970 logback [http-nio-8090-exec-10] DEBUG com.etc.dao.ArticleDao.find_COUNT - <==      Total: 1
+11:22:39.970 logback [http-nio-8090-exec-10] DEBUG com.etc.dao.ArticleDao.find - ==>  Preparing: select * from Users LIMIT ?
+11:22:39.971 logback [http-nio-8090-exec-10] DEBUG com.etc.dao.ArticleDao.find - ==> Parameters: 5(Integer)
+11:22:39.971 logback [http-nio-8090-exec-10] DEBUG com.etc.dao.ArticleDao.find - <==      Total: 5
+11:22:39.972 logback [http-nio-8090-exec-10] DEBUG o.s.w.s.v.ContentNegotiatingViewResolver - Selected 'text/html' given [text/html, application/xhtml+xml, image/webp, image/apng, application/xml;q=0.9, application/signed-exchange;v=b3;q=0.9, */*;q=0.8]
+11:22:39.979 logback [http-nio-8090-exec-10] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+11:25:38.659 logback [http-nio-8090-exec-5] DEBUG o.s.web.servlet.DispatcherServlet - GET "/sbmybatisdemo/userquery", parameters={}
+11:25:38.660 logback [http-nio-8090-exec-5] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.etc.controller.UserController#query(Integer, Integer)
+11:25:38.665 logback [http-nio-8090-exec-5] DEBUG com.etc.dao.ArticleDao.find_COUNT - ==>  Preparing: SELECT count(0) FROM Users
+11:25:38.666 logback [http-nio-8090-exec-5] DEBUG com.etc.dao.ArticleDao.find_COUNT - ==> Parameters:
+11:25:38.667 logback [http-nio-8090-exec-5] DEBUG com.etc.dao.ArticleDao.find_COUNT - <==      Total: 1
+11:25:38.668 logback [http-nio-8090-exec-5] DEBUG com.etc.dao.ArticleDao.find - ==>  Preparing: select * from Users LIMIT ?
+11:25:38.668 logback [http-nio-8090-exec-5] DEBUG com.etc.dao.ArticleDao.find - ==> Parameters: 5(Integer)
+11:25:38.669 logback [http-nio-8090-exec-5] DEBUG com.etc.dao.ArticleDao.find - <==      Total: 5
+11:25:38.670 logback [http-nio-8090-exec-5] DEBUG o.s.w.s.v.ContentNegotiatingViewResolver - Selected 'text/html' given [text/html, application/xhtml+xml, image/webp, image/apng, application/xml;q=0.9, application/signed-exchange;v=b3;q=0.9, */*;q=0.8]
+11:25:38.683 logback [http-nio-8090-exec-5] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+11:25:40.658 logback [http-nio-8090-exec-7] DEBUG o.s.web.servlet.DispatcherServlet - GET "/sbmybatisdemo/userquery", parameters={}
+11:25:40.658 logback [http-nio-8090-exec-7] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.etc.controller.UserController#query(Integer, Integer)
+11:25:40.660 logback [http-nio-8090-exec-7] DEBUG com.etc.dao.ArticleDao.find_COUNT - ==>  Preparing: SELECT count(0) FROM Users
+11:25:40.660 logback [http-nio-8090-exec-7] DEBUG com.etc.dao.ArticleDao.find_COUNT - ==> Parameters:
+11:25:40.660 logback [http-nio-8090-exec-7] DEBUG com.etc.dao.ArticleDao.find_COUNT - <==      Total: 1
+11:25:40.661 logback [http-nio-8090-exec-7] DEBUG com.etc.dao.ArticleDao.find - ==>  Preparing: select * from Users LIMIT ?
+11:25:40.661 logback [http-nio-8090-exec-7] DEBUG com.etc.dao.ArticleDao.find - ==> Parameters: 5(Integer)
+11:25:40.662 logback [http-nio-8090-exec-7] DEBUG com.etc.dao.ArticleDao.find - <==      Total: 5
+11:25:40.662 logback [http-nio-8090-exec-7] DEBUG o.s.w.s.v.ContentNegotiatingViewResolver - Selected 'text/html' given [text/html, application/xhtml+xml, image/webp, image/apng, application/xml;q=0.9, application/signed-exchange;v=b3;q=0.9, */*;q=0.8]
+11:25:40.668 logback [http-nio-8090-exec-7] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+11:25:44.120 logback [http-nio-8090-exec-9] DEBUG o.s.web.servlet.DispatcherServlet - POST "/sbmybatisdemo/userquery", parameters={masked}
+11:25:44.121 logback [http-nio-8090-exec-9] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.etc.controller.UserController#query(Integer, Integer)
+11:25:44.124 logback [http-nio-8090-exec-9] DEBUG com.etc.dao.ArticleDao.find_COUNT - ==>  Preparing: SELECT count(0) FROM Users
+11:25:44.124 logback [http-nio-8090-exec-9] DEBUG com.etc.dao.ArticleDao.find_COUNT - ==> Parameters:
+11:25:44.126 logback [http-nio-8090-exec-9] DEBUG com.etc.dao.ArticleDao.find_COUNT - <==      Total: 1
+11:25:44.127 logback [http-nio-8090-exec-9] DEBUG com.etc.dao.ArticleDao.find - ==>  Preparing: select * from Users LIMIT ?, ?
+11:25:44.127 logback [http-nio-8090-exec-9] DEBUG com.etc.dao.ArticleDao.find - ==> Parameters: 5(Integer), 5(Integer)
+11:25:44.129 logback [http-nio-8090-exec-9] DEBUG com.etc.dao.ArticleDao.find - <==      Total: 3
+11:25:44.132 logback [http-nio-8090-exec-9] DEBUG o.s.w.s.v.ContentNegotiatingViewResolver - Selected 'text/html' given [text/html, application/xhtml+xml, image/webp, image/apng, application/xml;q=0.9, application/signed-exchange;v=b3;q=0.9, */*;q=0.8]
+11:25:44.154 logback [http-nio-8090-exec-9] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+11:25:47.574 logback [http-nio-8090-exec-2] DEBUG o.s.web.servlet.DispatcherServlet - POST "/sbmybatisdemo/userquery", parameters={masked}
+11:25:47.574 logback [http-nio-8090-exec-2] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.etc.controller.UserController#query(Integer, Integer)
+11:25:47.576 logback [http-nio-8090-exec-2] DEBUG com.etc.dao.ArticleDao.find_COUNT - ==>  Preparing: SELECT count(0) FROM Users
+11:25:47.576 logback [http-nio-8090-exec-2] DEBUG com.etc.dao.ArticleDao.find_COUNT - ==> Parameters:
+11:25:47.577 logback [http-nio-8090-exec-2] DEBUG com.etc.dao.ArticleDao.find_COUNT - <==      Total: 1
+11:25:47.577 logback [http-nio-8090-exec-2] DEBUG com.etc.dao.ArticleDao.find - ==>  Preparing: select * from Users LIMIT ?
+11:25:47.577 logback [http-nio-8090-exec-2] DEBUG com.etc.dao.ArticleDao.find - ==> Parameters: 5(Integer)
+11:25:47.578 logback [http-nio-8090-exec-2] DEBUG com.etc.dao.ArticleDao.find - <==      Total: 5
+11:25:47.579 logback [http-nio-8090-exec-2] DEBUG o.s.w.s.v.ContentNegotiatingViewResolver - Selected 'text/html' given [text/html, application/xhtml+xml, image/webp, image/apng, application/xml;q=0.9, application/signed-exchange;v=b3;q=0.9, */*;q=0.8]
+11:25:47.581 logback [http-nio-8090-exec-2] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+11:25:49.386 logback [http-nio-8090-exec-4] DEBUG o.s.web.servlet.DispatcherServlet - POST "/sbmybatisdemo/userquery", parameters={masked}
+11:25:49.386 logback [http-nio-8090-exec-4] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.etc.controller.UserController#query(Integer, Integer)
+11:25:49.387 logback [http-nio-8090-exec-4] DEBUG com.etc.dao.ArticleDao.find_COUNT - ==>  Preparing: SELECT count(0) FROM Users
+11:25:49.389 logback [http-nio-8090-exec-4] DEBUG com.etc.dao.ArticleDao.find_COUNT - ==> Parameters:
+11:25:49.392 logback [http-nio-8090-exec-4] DEBUG com.etc.dao.ArticleDao.find_COUNT - <==      Total: 1
+11:25:49.393 logback [http-nio-8090-exec-4] DEBUG com.etc.dao.ArticleDao.find - ==>  Preparing: select * from Users LIMIT ?, ?
+11:25:49.393 logback [http-nio-8090-exec-4] DEBUG com.etc.dao.ArticleDao.find - ==> Parameters: 5(Integer), 5(Integer)
+11:25:49.393 logback [http-nio-8090-exec-4] DEBUG com.etc.dao.ArticleDao.find - <==      Total: 3
+11:25:49.394 logback [http-nio-8090-exec-4] DEBUG o.s.w.s.v.ContentNegotiatingViewResolver - Selected 'text/html' given [text/html, application/xhtml+xml, image/webp, image/apng, application/xml;q=0.9, application/signed-exchange;v=b3;q=0.9, */*;q=0.8]
+11:25:49.397 logback [http-nio-8090-exec-4] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+11:25:55.219 logback [http-nio-8090-exec-6] DEBUG o.s.web.servlet.DispatcherServlet - GET "/sbmybatisdemo/usertoadd", parameters={}
+11:25:55.219 logback [http-nio-8090-exec-6] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.etc.controller.UserController#toadd()
+11:25:55.220 logback [http-nio-8090-exec-6] DEBUG o.s.w.s.v.ContentNegotiatingViewResolver - Selected 'text/html' given [text/html, application/xhtml+xml, image/webp, image/apng, application/xml;q=0.9, application/signed-exchange;v=b3;q=0.9, */*;q=0.8]
+11:25:55.221 logback [http-nio-8090-exec-6] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+11:26:10.609 logback [http-nio-8090-exec-10] DEBUG o.s.web.servlet.DispatcherServlet - POST "/sbmybatisdemo/useradd", parameters={masked}
+11:26:10.610 logback [http-nio-8090-exec-10] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.etc.controller.UserController#add(User)
+11:26:10.613 logback [http-nio-8090-exec-10] DEBUG com.etc.dao.ArticleDao.add - ==>  Preparing: insert into Users values(default,?,?)
+11:26:10.615 logback [http-nio-8090-exec-10] DEBUG com.etc.dao.ArticleDao.add - ==> Parameters: 刘备(String), 789456(String)
+11:26:10.661 logback [http-nio-8090-exec-10] DEBUG com.etc.dao.ArticleDao.add - <==    Updates: 1
+11:26:10.661 logback [http-nio-8090-exec-10] DEBUG o.s.web.servlet.view.RedirectView - View [RedirectView], model {msg=新加成功!}
+11:26:10.662 logback [http-nio-8090-exec-10] DEBUG o.s.web.servlet.DispatcherServlet - Completed 302 FOUND
+11:26:10.665 logback [http-nio-8090-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - GET "/sbmybatisdemo/userget/10?msg=%E6%96%B0%E5%8A%A0%E6%88%90%E5%8A%9F%21", parameters={masked}
+11:26:10.665 logback [http-nio-8090-exec-1] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.etc.controller.UserController#get(Integer)
+11:26:10.666 logback [http-nio-8090-exec-1] DEBUG com.etc.dao.ArticleDao.get - ==>  Preparing: select * from Users where uid=?
+11:26:10.666 logback [http-nio-8090-exec-1] DEBUG com.etc.dao.ArticleDao.get - ==> Parameters: 10(Integer)
+11:26:10.667 logback [http-nio-8090-exec-1] DEBUG com.etc.dao.ArticleDao.get - <==      Total: 1
+11:26:10.667 logback [http-nio-8090-exec-1] DEBUG o.s.w.s.v.ContentNegotiatingViewResolver - Selected 'text/html' given [text/html, application/xhtml+xml, image/webp, image/apng, application/xml;q=0.9, application/signed-exchange;v=b3;q=0.9, */*;q=0.8]
+11:26:10.669 logback [http-nio-8090-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+11:26:11.879 logback [http-nio-8090-exec-3] DEBUG o.s.web.servlet.DispatcherServlet - GET "/sbmybatisdemo/usertoadd", parameters={}
+11:26:11.888 logback [http-nio-8090-exec-3] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.etc.controller.UserController#toadd()
+11:26:11.889 logback [http-nio-8090-exec-3] DEBUG o.s.w.s.v.ContentNegotiatingViewResolver - Selected 'text/html' given [text/html, application/xhtml+xml, image/webp, image/apng, application/xml;q=0.9, application/signed-exchange;v=b3;q=0.9, */*;q=0.8]
+11:26:11.890 logback [http-nio-8090-exec-3] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+11:26:18.177 logback [http-nio-8090-exec-5] DEBUG o.s.web.servlet.DispatcherServlet - POST "/sbmybatisdemo/useradd", parameters={masked}
+11:26:18.178 logback [http-nio-8090-exec-5] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.etc.controller.UserController#add(User)
+11:26:18.180 logback [http-nio-8090-exec-5] DEBUG com.etc.dao.ArticleDao.add - ==>  Preparing: insert into Users values(default,?,?)
+11:26:18.180 logback [http-nio-8090-exec-5] DEBUG com.etc.dao.ArticleDao.add - ==> Parameters: 孙权(String), 789123(String)
+11:26:18.228 logback [http-nio-8090-exec-5] DEBUG com.etc.dao.ArticleDao.add - <==    Updates: 1
+11:26:18.228 logback [http-nio-8090-exec-5] DEBUG o.s.web.servlet.view.RedirectView - View [RedirectView], model {msg=新加成功!}
+11:26:18.229 logback [http-nio-8090-exec-5] DEBUG o.s.web.servlet.DispatcherServlet - Completed 302 FOUND
+11:26:18.253 logback [http-nio-8090-exec-7] DEBUG o.s.web.servlet.DispatcherServlet - GET "/sbmybatisdemo/userget/11?msg=%E6%96%B0%E5%8A%A0%E6%88%90%E5%8A%9F%21", parameters={masked}
+11:26:18.253 logback [http-nio-8090-exec-7] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.etc.controller.UserController#get(Integer)
+11:26:18.253 logback [http-nio-8090-exec-7] DEBUG com.etc.dao.ArticleDao.get - ==>  Preparing: select * from Users where uid=?
+11:26:18.254 logback [http-nio-8090-exec-7] DEBUG com.etc.dao.ArticleDao.get - ==> Parameters: 11(Integer)
+11:26:18.255 logback [http-nio-8090-exec-7] DEBUG com.etc.dao.ArticleDao.get - <==      Total: 1
+11:26:18.255 logback [http-nio-8090-exec-7] DEBUG o.s.w.s.v.ContentNegotiatingViewResolver - Selected 'text/html' given [text/html, application/xhtml+xml, image/webp, image/apng, application/xml;q=0.9, application/signed-exchange;v=b3;q=0.9, */*;q=0.8]
+11:26:18.258 logback [http-nio-8090-exec-7] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+11:26:19.563 logback [http-nio-8090-exec-9] DEBUG o.s.web.servlet.DispatcherServlet - GET "/sbmybatisdemo/usertoadd", parameters={}
+11:26:19.563 logback [http-nio-8090-exec-9] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.etc.controller.UserController#toadd()
+11:26:19.565 logback [http-nio-8090-exec-9] DEBUG o.s.w.s.v.ContentNegotiatingViewResolver - Selected 'text/html' given [text/html, application/xhtml+xml, image/webp, image/apng, application/xml;q=0.9, application/signed-exchange;v=b3;q=0.9, */*;q=0.8]
+11:26:19.568 logback [http-nio-8090-exec-9] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+11:26:33.879 logback [http-nio-8090-exec-2] DEBUG o.s.web.servlet.DispatcherServlet - POST "/sbmybatisdemo/useradd", parameters={masked}
+11:26:33.880 logback [http-nio-8090-exec-2] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.etc.controller.UserController#add(User)
+11:26:33.883 logback [http-nio-8090-exec-2] DEBUG com.etc.dao.ArticleDao.add - ==>  Preparing: insert into Users values(default,?,?)
+11:26:33.883 logback [http-nio-8090-exec-2] DEBUG com.etc.dao.ArticleDao.add - ==> Parameters: 曹操(String), 753951(String)
+11:26:33.994 logback [http-nio-8090-exec-2] DEBUG com.etc.dao.ArticleDao.add - <==    Updates: 1
+11:26:33.995 logback [http-nio-8090-exec-2] DEBUG o.s.web.servlet.view.RedirectView - View [RedirectView], model {msg=新加成功!}
+11:26:33.996 logback [http-nio-8090-exec-2] DEBUG o.s.web.servlet.DispatcherServlet - Completed 302 FOUND
+11:26:34.006 logback [http-nio-8090-exec-4] DEBUG o.s.web.servlet.DispatcherServlet - GET "/sbmybatisdemo/userget/12?msg=%E6%96%B0%E5%8A%A0%E6%88%90%E5%8A%9F%21", parameters={masked}
+11:26:34.007 logback [http-nio-8090-exec-4] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.etc.controller.UserController#get(Integer)
+11:26:34.011 logback [http-nio-8090-exec-4] DEBUG com.etc.dao.ArticleDao.get - ==>  Preparing: select * from Users where uid=?
+11:26:34.011 logback [http-nio-8090-exec-4] DEBUG com.etc.dao.ArticleDao.get - ==> Parameters: 12(Integer)
+11:26:34.015 logback [http-nio-8090-exec-4] DEBUG com.etc.dao.ArticleDao.get - <==      Total: 1
+11:26:34.016 logback [http-nio-8090-exec-4] DEBUG o.s.w.s.v.ContentNegotiatingViewResolver - Selected 'text/html' given [text/html, application/xhtml+xml, image/webp, image/apng, application/xml;q=0.9, application/signed-exchange;v=b3;q=0.9, */*;q=0.8]
+11:26:34.019 logback [http-nio-8090-exec-4] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+11:26:35.730 logback [http-nio-8090-exec-6] DEBUG o.s.web.servlet.DispatcherServlet - GET "/sbmybatisdemo/userquery", parameters={}
+11:26:35.730 logback [http-nio-8090-exec-6] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.etc.controller.UserController#query(Integer, Integer)
+11:26:35.735 logback [http-nio-8090-exec-6] DEBUG com.etc.dao.ArticleDao.find_COUNT - ==>  Preparing: SELECT count(0) FROM Users
+11:26:35.736 logback [http-nio-8090-exec-6] DEBUG com.etc.dao.ArticleDao.find_COUNT - ==> Parameters:
+11:26:35.738 logback [http-nio-8090-exec-6] DEBUG com.etc.dao.ArticleDao.find_COUNT - <==      Total: 1
+11:26:35.741 logback [http-nio-8090-exec-6] DEBUG com.etc.dao.ArticleDao.find - ==>  Preparing: select * from Users LIMIT ?
+11:26:35.743 logback [http-nio-8090-exec-6] DEBUG com.etc.dao.ArticleDao.find - ==> Parameters: 5(Integer)
+11:26:35.756 logback [http-nio-8090-exec-6] DEBUG com.etc.dao.ArticleDao.find - <==      Total: 5
+11:26:35.757 logback [http-nio-8090-exec-6] DEBUG o.s.w.s.v.ContentNegotiatingViewResolver - Selected 'text/html' given [text/html, application/xhtml+xml, image/webp, image/apng, application/xml;q=0.9, application/signed-exchange;v=b3;q=0.9, */*;q=0.8]
+11:26:35.760 logback [http-nio-8090-exec-6] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+11:26:42.383 logback [http-nio-8090-exec-8] DEBUG o.s.web.servlet.DispatcherServlet - POST "/sbmybatisdemo/userquery", parameters={masked}
+11:26:42.383 logback [http-nio-8090-exec-8] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.etc.controller.UserController#query(Integer, Integer)
+11:26:42.385 logback [http-nio-8090-exec-8] DEBUG com.etc.dao.ArticleDao.find_COUNT - ==>  Preparing: SELECT count(0) FROM Users
+11:26:42.385 logback [http-nio-8090-exec-8] DEBUG com.etc.dao.ArticleDao.find_COUNT - ==> Parameters:
+11:26:42.386 logback [http-nio-8090-exec-8] DEBUG com.etc.dao.ArticleDao.find_COUNT - <==      Total: 1
+11:26:42.387 logback [http-nio-8090-exec-8] DEBUG com.etc.dao.ArticleDao.find - ==>  Preparing: select * from Users LIMIT ?, ?
+11:26:42.387 logback [http-nio-8090-exec-8] DEBUG com.etc.dao.ArticleDao.find - ==> Parameters: 10(Integer), 5(Integer)
+11:26:42.388 logback [http-nio-8090-exec-8] DEBUG com.etc.dao.ArticleDao.find - <==      Total: 1
+11:26:42.389 logback [http-nio-8090-exec-8] DEBUG o.s.w.s.v.ContentNegotiatingViewResolver - Selected 'text/html' given [text/html, application/xhtml+xml, image/webp, image/apng, application/xml;q=0.9, application/signed-exchange;v=b3;q=0.9, */*;q=0.8]
+11:26:42.392 logback [http-nio-8090-exec-8] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+11:26:45.486 logback [http-nio-8090-exec-10] DEBUG o.s.web.servlet.DispatcherServlet - POST "/sbmybatisdemo/userquery", parameters={masked}
+11:26:45.487 logback [http-nio-8090-exec-10] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.etc.controller.UserController#query(Integer, Integer)
+11:26:45.490 logback [http-nio-8090-exec-10] DEBUG com.etc.dao.ArticleDao.find_COUNT - ==>  Preparing: SELECT count(0) FROM Users
+11:26:45.490 logback [http-nio-8090-exec-10] DEBUG com.etc.dao.ArticleDao.find_COUNT - ==> Parameters:
+11:26:45.491 logback [http-nio-8090-exec-10] DEBUG com.etc.dao.ArticleDao.find_COUNT - <==      Total: 1
+11:26:45.492 logback [http-nio-8090-exec-10] DEBUG com.etc.dao.ArticleDao.find - ==>  Preparing: select * from Users LIMIT ?
+11:26:45.492 logback [http-nio-8090-exec-10] DEBUG com.etc.dao.ArticleDao.find - ==> Parameters: 5(Integer)
+11:26:45.494 logback [http-nio-8090-exec-10] DEBUG com.etc.dao.ArticleDao.find - <==      Total: 5
+11:26:45.495 logback [http-nio-8090-exec-10] DEBUG o.s.w.s.v.ContentNegotiatingViewResolver - Selected 'text/html' given [text/html, application/xhtml+xml, image/webp, image/apng, application/xml;q=0.9, application/signed-exchange;v=b3;q=0.9, */*;q=0.8]
+11:26:45.502 logback [http-nio-8090-exec-10] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+11:26:54.877 logback [http-nio-8090-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - POST "/sbmybatisdemo/userquery", parameters={masked}
+11:26:54.877 logback [http-nio-8090-exec-1] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.etc.controller.UserController#query(Integer, Integer)
+11:26:54.881 logback [http-nio-8090-exec-1] DEBUG com.etc.dao.ArticleDao.find_COUNT - ==>  Preparing: SELECT count(0) FROM Users
+11:26:54.881 logback [http-nio-8090-exec-1] DEBUG com.etc.dao.ArticleDao.find_COUNT - ==> Parameters:
+11:26:54.882 logback [http-nio-8090-exec-1] DEBUG com.etc.dao.ArticleDao.find_COUNT - <==      Total: 1
+11:26:54.883 logback [http-nio-8090-exec-1] DEBUG com.etc.dao.ArticleDao.find - ==>  Preparing: select * from Users LIMIT ?, ?
+11:26:54.883 logback [http-nio-8090-exec-1] DEBUG com.etc.dao.ArticleDao.find - ==> Parameters: 10(Integer), 5(Integer)
+11:26:54.886 logback [http-nio-8090-exec-1] DEBUG com.etc.dao.ArticleDao.find - <==      Total: 1
+11:26:54.886 logback [http-nio-8090-exec-1] DEBUG o.s.w.s.v.ContentNegotiatingViewResolver - Selected 'text/html' given [text/html, application/xhtml+xml, image/webp, image/apng, application/xml;q=0.9, application/signed-exchange;v=b3;q=0.9, */*;q=0.8]
+11:26:54.890 logback [http-nio-8090-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+11:26:59.425 logback [http-nio-8090-exec-3] DEBUG o.s.web.servlet.DispatcherServlet - POST "/sbmybatisdemo/userquery", parameters={masked}
+11:26:59.426 logback [http-nio-8090-exec-3] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.etc.controller.UserController#query(Integer, Integer)
+11:26:59.428 logback [http-nio-8090-exec-3] DEBUG com.etc.dao.ArticleDao.find_COUNT - ==>  Preparing: SELECT count(0) FROM Users
+11:26:59.429 logback [http-nio-8090-exec-3] DEBUG com.etc.dao.ArticleDao.find_COUNT - ==> Parameters:
+11:26:59.430 logback [http-nio-8090-exec-3] DEBUG com.etc.dao.ArticleDao.find_COUNT - <==      Total: 1
+11:26:59.430 logback [http-nio-8090-exec-3] DEBUG com.etc.dao.ArticleDao.find - ==>  Preparing: select * from Users LIMIT ?
+11:26:59.431 logback [http-nio-8090-exec-3] DEBUG com.etc.dao.ArticleDao.find - ==> Parameters: 5(Integer)
+11:26:59.433 logback [http-nio-8090-exec-3] DEBUG com.etc.dao.ArticleDao.find - <==      Total: 5
+11:26:59.435 logback [http-nio-8090-exec-3] DEBUG o.s.w.s.v.ContentNegotiatingViewResolver - Selected 'text/html' given [text/html, application/xhtml+xml, image/webp, image/apng, application/xml;q=0.9, application/signed-exchange;v=b3;q=0.9, */*;q=0.8]
+11:26:59.455 logback [http-nio-8090-exec-3] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+11:27:44.422 logback [http-nio-8090-exec-7] DEBUG o.s.web.servlet.DispatcherServlet - POST "/sbmybatisdemo/userquery", parameters={masked}
+11:27:44.422 logback [http-nio-8090-exec-7] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.etc.controller.UserController#query(Integer, Integer)
+11:27:44.424 logback [http-nio-8090-exec-7] DEBUG com.etc.dao.ArticleDao.find_COUNT - ==>  Preparing: SELECT count(0) FROM Users
+11:27:44.424 logback [http-nio-8090-exec-7] DEBUG com.etc.dao.ArticleDao.find_COUNT - ==> Parameters:
+11:27:44.425 logback [http-nio-8090-exec-7] DEBUG com.etc.dao.ArticleDao.find_COUNT - <==      Total: 1
+11:27:44.426 logback [http-nio-8090-exec-7] DEBUG com.etc.dao.ArticleDao.find - ==>  Preparing: select * from Users LIMIT ?
+11:27:44.426 logback [http-nio-8090-exec-7] DEBUG com.etc.dao.ArticleDao.find - ==> Parameters: 5(Integer)
+11:27:44.428 logback [http-nio-8090-exec-7] DEBUG com.etc.dao.ArticleDao.find - <==      Total: 5
+11:27:44.429 logback [http-nio-8090-exec-7] DEBUG o.s.w.s.v.ContentNegotiatingViewResolver - Selected 'text/html' given [text/html, application/xhtml+xml, image/webp, image/apng, application/xml;q=0.9, application/signed-exchange;v=b3;q=0.9, */*;q=0.8]
+11:27:44.434 logback [http-nio-8090-exec-7] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+11:27:45.994 logback [http-nio-8090-exec-9] DEBUG o.s.web.servlet.DispatcherServlet - POST "/sbmybatisdemo/userquery", parameters={masked}
+11:27:45.994 logback [http-nio-8090-exec-9] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.etc.controller.UserController#query(Integer, Integer)
+11:27:45.998 logback [http-nio-8090-exec-9] DEBUG com.etc.dao.ArticleDao.find_COUNT - ==>  Preparing: SELECT count(0) FROM Users
+11:27:45.999 logback [http-nio-8090-exec-9] DEBUG com.etc.dao.ArticleDao.find_COUNT - ==> Parameters:
+11:27:46.002 logback [http-nio-8090-exec-9] DEBUG com.etc.dao.ArticleDao.find_COUNT - <==      Total: 1
+11:27:46.003 logback [http-nio-8090-exec-9] DEBUG com.etc.dao.ArticleDao.find - ==>  Preparing: select * from Users LIMIT ?
+11:27:46.003 logback [http-nio-8090-exec-9] DEBUG com.etc.dao.ArticleDao.find - ==> Parameters: 5(Integer)
+11:27:46.004 logback [http-nio-8090-exec-9] DEBUG com.etc.dao.ArticleDao.find - <==      Total: 5
+11:27:46.005 logback [http-nio-8090-exec-9] DEBUG o.s.w.s.v.ContentNegotiatingViewResolver - Selected 'text/html' given [text/html, application/xhtml+xml, image/webp, image/apng, application/xml;q=0.9, application/signed-exchange;v=b3;q=0.9, */*;q=0.8]
+11:27:46.009 logback [http-nio-8090-exec-9] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+11:27:48.005 logback [http-nio-8090-exec-2] DEBUG o.s.web.servlet.DispatcherServlet - POST "/sbmybatisdemo/userquery", parameters={masked}
+11:27:48.006 logback [http-nio-8090-exec-2] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.etc.controller.UserController#query(Integer, Integer)
+11:27:48.007 logback [http-nio-8090-exec-2] DEBUG com.etc.dao.ArticleDao.find_COUNT - ==>  Preparing: SELECT count(0) FROM Users
+11:27:48.007 logback [http-nio-8090-exec-2] DEBUG com.etc.dao.ArticleDao.find_COUNT - ==> Parameters:
+11:27:48.008 logback [http-nio-8090-exec-2] DEBUG com.etc.dao.ArticleDao.find_COUNT - <==      Total: 1
+11:27:48.008 logback [http-nio-8090-exec-2] DEBUG com.etc.dao.ArticleDao.find - ==>  Preparing: select * from Users LIMIT ?
+11:27:48.008 logback [http-nio-8090-exec-2] DEBUG com.etc.dao.ArticleDao.find - ==> Parameters: 10(Integer)
+11:27:48.010 logback [http-nio-8090-exec-2] DEBUG com.etc.dao.ArticleDao.find - <==      Total: 10
+11:27:48.012 logback [http-nio-8090-exec-2] DEBUG o.s.w.s.v.ContentNegotiatingViewResolver - Selected 'text/html' given [text/html, application/xhtml+xml, image/webp, image/apng, application/xml;q=0.9, application/signed-exchange;v=b3;q=0.9, */*;q=0.8]
+11:27:48.016 logback [http-nio-8090-exec-2] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+11:27:53.054 logback [http-nio-8090-exec-4] DEBUG o.s.web.servlet.DispatcherServlet - POST "/sbmybatisdemo/userquery", parameters={masked}
+11:27:53.054 logback [http-nio-8090-exec-4] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.etc.controller.UserController#query(Integer, Integer)
+11:27:53.068 logback [http-nio-8090-exec-4] DEBUG com.etc.dao.ArticleDao.find_COUNT - ==>  Preparing: SELECT count(0) FROM Users
+11:27:53.068 logback [http-nio-8090-exec-4] DEBUG com.etc.dao.ArticleDao.find_COUNT - ==> Parameters:
+11:27:53.069 logback [http-nio-8090-exec-4] DEBUG com.etc.dao.ArticleDao.find_COUNT - <==      Total: 1
+11:27:53.069 logback [http-nio-8090-exec-4] DEBUG com.etc.dao.ArticleDao.find - ==>  Preparing: select * from Users LIMIT ?, ?
+11:27:53.069 logback [http-nio-8090-exec-4] DEBUG com.etc.dao.ArticleDao.find - ==> Parameters: 10(Integer), 10(Integer)
+11:27:53.070 logback [http-nio-8090-exec-4] DEBUG com.etc.dao.ArticleDao.find - <==      Total: 1
+11:27:53.071 logback [http-nio-8090-exec-4] DEBUG o.s.w.s.v.ContentNegotiatingViewResolver - Selected 'text/html' given [text/html, application/xhtml+xml, image/webp, image/apng, application/xml;q=0.9, application/signed-exchange;v=b3;q=0.9, */*;q=0.8]
+11:27:53.073 logback [http-nio-8090-exec-4] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+11:28:01.687 logback [http-nio-8090-exec-6] DEBUG o.s.web.servlet.DispatcherServlet - POST "/sbmybatisdemo/userquery", parameters={masked}
+11:28:01.688 logback [http-nio-8090-exec-6] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.etc.controller.UserController#query(Integer, Integer)
+11:28:01.689 logback [http-nio-8090-exec-6] DEBUG com.etc.dao.ArticleDao.find_COUNT - ==>  Preparing: SELECT count(0) FROM Users
+11:28:01.690 logback [http-nio-8090-exec-6] DEBUG com.etc.dao.ArticleDao.find_COUNT - ==> Parameters:
+11:28:01.691 logback [http-nio-8090-exec-6] DEBUG com.etc.dao.ArticleDao.find_COUNT - <==      Total: 1
+11:28:01.691 logback [http-nio-8090-exec-6] DEBUG com.etc.dao.ArticleDao.find - ==>  Preparing: select * from Users LIMIT ?
+11:28:01.692 logback [http-nio-8090-exec-6] DEBUG com.etc.dao.ArticleDao.find - ==> Parameters: 10(Integer)
+11:28:01.697 logback [http-nio-8090-exec-6] DEBUG com.etc.dao.ArticleDao.find - <==      Total: 10
+11:28:01.698 logback [http-nio-8090-exec-6] DEBUG o.s.w.s.v.ContentNegotiatingViewResolver - Selected 'text/html' given [text/html, application/xhtml+xml, image/webp, image/apng, application/xml;q=0.9, application/signed-exchange;v=b3;q=0.9, */*;q=0.8]
+11:28:01.703 logback [http-nio-8090-exec-6] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+11:28:03.987 logback [http-nio-8090-exec-8] DEBUG o.s.web.servlet.DispatcherServlet - POST "/sbmybatisdemo/userquery", parameters={masked}
+11:28:03.990 logback [http-nio-8090-exec-8] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.etc.controller.UserController#query(Integer, Integer)
+11:28:03.993 logback [http-nio-8090-exec-8] DEBUG com.etc.dao.ArticleDao.find_COUNT - ==>  Preparing: SELECT count(0) FROM Users
+11:28:03.993 logback [http-nio-8090-exec-8] DEBUG com.etc.dao.ArticleDao.find_COUNT - ==> Parameters:
+11:28:03.995 logback [http-nio-8090-exec-8] DEBUG com.etc.dao.ArticleDao.find_COUNT - <==      Total: 1
+11:28:03.995 logback [http-nio-8090-exec-8] DEBUG com.etc.dao.ArticleDao.find - ==>  Preparing: select * from Users LIMIT ?
+11:28:03.995 logback [http-nio-8090-exec-8] DEBUG com.etc.dao.ArticleDao.find - ==> Parameters: 20(Integer)
+11:28:03.997 logback [http-nio-8090-exec-8] DEBUG com.etc.dao.ArticleDao.find - <==      Total: 11
+11:28:03.998 logback [http-nio-8090-exec-8] DEBUG o.s.w.s.v.ContentNegotiatingViewResolver - Selected 'text/html' given [text/html, application/xhtml+xml, image/webp, image/apng, application/xml;q=0.9, application/signed-exchange;v=b3;q=0.9, */*;q=0.8]
+11:28:04.001 logback [http-nio-8090-exec-8] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+11:28:08.887 logback [http-nio-8090-exec-10] DEBUG o.s.web.servlet.DispatcherServlet - POST "/sbmybatisdemo/userquery", parameters={masked}
+11:28:08.888 logback [http-nio-8090-exec-10] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.etc.controller.UserController#query(Integer, Integer)
+11:28:08.889 logback [http-nio-8090-exec-10] DEBUG com.etc.dao.ArticleDao.find_COUNT - ==>  Preparing: SELECT count(0) FROM Users
+11:28:08.889 logback [http-nio-8090-exec-10] DEBUG com.etc.dao.ArticleDao.find_COUNT - ==> Parameters:
+11:28:08.891 logback [http-nio-8090-exec-10] DEBUG com.etc.dao.ArticleDao.find_COUNT - <==      Total: 1
+11:28:08.892 logback [http-nio-8090-exec-10] DEBUG com.etc.dao.ArticleDao.find - ==>  Preparing: select * from Users LIMIT ?
+11:28:08.892 logback [http-nio-8090-exec-10] DEBUG com.etc.dao.ArticleDao.find - ==> Parameters: 20(Integer)
+11:28:08.893 logback [http-nio-8090-exec-10] DEBUG com.etc.dao.ArticleDao.find - <==      Total: 11
+11:28:08.894 logback [http-nio-8090-exec-10] DEBUG o.s.w.s.v.ContentNegotiatingViewResolver - Selected 'text/html' given [text/html, application/xhtml+xml, image/webp, image/apng, application/xml;q=0.9, application/signed-exchange;v=b3;q=0.9, */*;q=0.8]
+11:28:08.898 logback [http-nio-8090-exec-10] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+11:28:09.572 logback [http-nio-8090-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - POST "/sbmybatisdemo/userquery", parameters={masked}
+11:28:09.572 logback [http-nio-8090-exec-1] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.etc.controller.UserController#query(Integer, Integer)
+11:28:09.573 logback [http-nio-8090-exec-1] DEBUG com.etc.dao.ArticleDao.find_COUNT - ==>  Preparing: SELECT count(0) FROM Users
+11:28:09.573 logback [http-nio-8090-exec-1] DEBUG com.etc.dao.ArticleDao.find_COUNT - ==> Parameters:
+11:28:09.574 logback [http-nio-8090-exec-1] DEBUG com.etc.dao.ArticleDao.find_COUNT - <==      Total: 1
+11:28:09.574 logback [http-nio-8090-exec-1] DEBUG com.etc.dao.ArticleDao.find - ==>  Preparing: select * from Users LIMIT ?
+11:28:09.574 logback [http-nio-8090-exec-1] DEBUG com.etc.dao.ArticleDao.find - ==> Parameters: 20(Integer)
+11:28:09.575 logback [http-nio-8090-exec-1] DEBUG com.etc.dao.ArticleDao.find - <==      Total: 11
+11:28:09.577 logback [http-nio-8090-exec-1] DEBUG o.s.w.s.v.ContentNegotiatingViewResolver - Selected 'text/html' given [text/html, application/xhtml+xml, image/webp, image/apng, application/xml;q=0.9, application/signed-exchange;v=b3;q=0.9, */*;q=0.8]
+11:28:09.584 logback [http-nio-8090-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+11:28:09.719 logback [http-nio-8090-exec-3] DEBUG o.s.web.servlet.DispatcherServlet - POST "/sbmybatisdemo/userquery", parameters={masked}
+11:28:09.719 logback [http-nio-8090-exec-3] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.etc.controller.UserController#query(Integer, Integer)
+11:28:09.720 logback [http-nio-8090-exec-3] DEBUG com.etc.dao.ArticleDao.find_COUNT - ==>  Preparing: SELECT count(0) FROM Users
+11:28:09.720 logback [http-nio-8090-exec-3] DEBUG com.etc.dao.ArticleDao.find_COUNT - ==> Parameters:
+11:28:09.721 logback [http-nio-8090-exec-3] DEBUG com.etc.dao.ArticleDao.find_COUNT - <==      Total: 1
+11:28:09.721 logback [http-nio-8090-exec-3] DEBUG com.etc.dao.ArticleDao.find - ==>  Preparing: select * from Users LIMIT ?
+11:28:09.722 logback [http-nio-8090-exec-3] DEBUG com.etc.dao.ArticleDao.find - ==> Parameters: 20(Integer)
+11:28:09.723 logback [http-nio-8090-exec-3] DEBUG com.etc.dao.ArticleDao.find - <==      Total: 11
+11:28:09.723 logback [http-nio-8090-exec-3] DEBUG o.s.w.s.v.ContentNegotiatingViewResolver - Selected 'text/html' given [text/html, application/xhtml+xml, image/webp, image/apng, application/xml;q=0.9, application/signed-exchange;v=b3;q=0.9, */*;q=0.8]
+11:28:09.726 logback [http-nio-8090-exec-3] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+11:28:09.903 logback [http-nio-8090-exec-5] DEBUG o.s.web.servlet.DispatcherServlet - POST "/sbmybatisdemo/userquery", parameters={masked}
+11:28:09.903 logback [http-nio-8090-exec-5] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.etc.controller.UserController#query(Integer, Integer)
+11:28:09.904 logback [http-nio-8090-exec-5] DEBUG com.etc.dao.ArticleDao.find_COUNT - ==>  Preparing: SELECT count(0) FROM Users
+11:28:09.904 logback [http-nio-8090-exec-5] DEBUG com.etc.dao.ArticleDao.find_COUNT - ==> Parameters:
+11:28:09.905 logback [http-nio-8090-exec-5] DEBUG com.etc.dao.ArticleDao.find_COUNT - <==      Total: 1
+11:28:09.905 logback [http-nio-8090-exec-5] DEBUG com.etc.dao.ArticleDao.find - ==>  Preparing: select * from Users LIMIT ?
+11:28:09.905 logback [http-nio-8090-exec-5] DEBUG com.etc.dao.ArticleDao.find - ==> Parameters: 20(Integer)
+11:28:09.907 logback [http-nio-8090-exec-5] DEBUG com.etc.dao.ArticleDao.find - <==      Total: 11
+11:28:09.909 logback [http-nio-8090-exec-5] DEBUG o.s.w.s.v.ContentNegotiatingViewResolver - Selected 'text/html' given [text/html, application/xhtml+xml, image/webp, image/apng, application/xml;q=0.9, application/signed-exchange;v=b3;q=0.9, */*;q=0.8]
+11:28:09.911 logback [http-nio-8090-exec-5] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+11:28:10.085 logback [http-nio-8090-exec-7] DEBUG o.s.web.servlet.DispatcherServlet - POST "/sbmybatisdemo/userquery", parameters={masked}
+11:28:10.085 logback [http-nio-8090-exec-7] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.etc.controller.UserController#query(Integer, Integer)
+11:28:10.086 logback [http-nio-8090-exec-7] DEBUG com.etc.dao.ArticleDao.find_COUNT - ==>  Preparing: SELECT count(0) FROM Users
+11:28:10.086 logback [http-nio-8090-exec-7] DEBUG com.etc.dao.ArticleDao.find_COUNT - ==> Parameters:
+11:28:10.087 logback [http-nio-8090-exec-7] DEBUG com.etc.dao.ArticleDao.find_COUNT - <==      Total: 1
+11:28:10.088 logback [http-nio-8090-exec-7] DEBUG com.etc.dao.ArticleDao.find - ==>  Preparing: select * from Users LIMIT ?
+11:28:10.088 logback [http-nio-8090-exec-7] DEBUG com.etc.dao.ArticleDao.find - ==> Parameters: 20(Integer)
+11:28:10.089 logback [http-nio-8090-exec-7] DEBUG com.etc.dao.ArticleDao.find - <==      Total: 11
+11:28:10.089 logback [http-nio-8090-exec-7] DEBUG o.s.w.s.v.ContentNegotiatingViewResolver - Selected 'text/html' given [text/html, application/xhtml+xml, image/webp, image/apng, application/xml;q=0.9, application/signed-exchange;v=b3;q=0.9, */*;q=0.8]
+11:28:10.092 logback [http-nio-8090-exec-7] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+11:28:10.279 logback [http-nio-8090-exec-9] DEBUG o.s.web.servlet.DispatcherServlet - POST "/sbmybatisdemo/userquery", parameters={masked}
+11:28:10.279 logback [http-nio-8090-exec-9] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.etc.controller.UserController#query(Integer, Integer)
+11:28:10.280 logback [http-nio-8090-exec-9] DEBUG com.etc.dao.ArticleDao.find_COUNT - ==>  Preparing: SELECT count(0) FROM Users
+11:28:10.281 logback [http-nio-8090-exec-9] DEBUG com.etc.dao.ArticleDao.find_COUNT - ==> Parameters:
+11:28:10.282 logback [http-nio-8090-exec-9] DEBUG com.etc.dao.ArticleDao.find_COUNT - <==      Total: 1
+11:28:10.282 logback [http-nio-8090-exec-9] DEBUG com.etc.dao.ArticleDao.find - ==>  Preparing: select * from Users LIMIT ?
+11:28:10.283 logback [http-nio-8090-exec-9] DEBUG com.etc.dao.ArticleDao.find - ==> Parameters: 20(Integer)
+11:28:10.284 logback [http-nio-8090-exec-9] DEBUG com.etc.dao.ArticleDao.find - <==      Total: 11
+11:28:10.287 logback [http-nio-8090-exec-9] DEBUG o.s.w.s.v.ContentNegotiatingViewResolver - Selected 'text/html' given [text/html, application/xhtml+xml, image/webp, image/apng, application/xml;q=0.9, application/signed-exchange;v=b3;q=0.9, */*;q=0.8]
+11:28:10.290 logback [http-nio-8090-exec-9] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+11:28:10.485 logback [http-nio-8090-exec-2] DEBUG o.s.web.servlet.DispatcherServlet - POST "/sbmybatisdemo/userquery", parameters={masked}
+11:28:10.485 logback [http-nio-8090-exec-2] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.etc.controller.UserController#query(Integer, Integer)
+11:28:10.487 logback [http-nio-8090-exec-2] DEBUG com.etc.dao.ArticleDao.find_COUNT - ==>  Preparing: SELECT count(0) FROM Users
+11:28:10.487 logback [http-nio-8090-exec-2] DEBUG com.etc.dao.ArticleDao.find_COUNT - ==> Parameters:
+11:28:10.488 logback [http-nio-8090-exec-2] DEBUG com.etc.dao.ArticleDao.find_COUNT - <==      Total: 1
+11:28:10.488 logback [http-nio-8090-exec-2] DEBUG com.etc.dao.ArticleDao.find - ==>  Preparing: select * from Users LIMIT ?
+11:28:10.488 logback [http-nio-8090-exec-2] DEBUG com.etc.dao.ArticleDao.find - ==> Parameters: 20(Integer)
+11:28:10.489 logback [http-nio-8090-exec-2] DEBUG com.etc.dao.ArticleDao.find - <==      Total: 11
+11:28:10.489 logback [http-nio-8090-exec-2] DEBUG o.s.w.s.v.ContentNegotiatingViewResolver - Selected 'text/html' given [text/html, application/xhtml+xml, image/webp, image/apng, application/xml;q=0.9, application/signed-exchange;v=b3;q=0.9, */*;q=0.8]
+11:28:10.492 logback [http-nio-8090-exec-2] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+11:28:10.619 logback [http-nio-8090-exec-4] DEBUG o.s.web.servlet.DispatcherServlet - POST "/sbmybatisdemo/userquery", parameters={masked}
+11:28:10.619 logback [http-nio-8090-exec-4] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.etc.controller.UserController#query(Integer, Integer)
+11:28:10.622 logback [http-nio-8090-exec-4] DEBUG com.etc.dao.ArticleDao.find_COUNT - ==>  Preparing: SELECT count(0) FROM Users
+11:28:10.622 logback [http-nio-8090-exec-4] DEBUG com.etc.dao.ArticleDao.find_COUNT - ==> Parameters:
+11:28:10.623 logback [http-nio-8090-exec-4] DEBUG com.etc.dao.ArticleDao.find_COUNT - <==      Total: 1
+11:28:10.623 logback [http-nio-8090-exec-4] DEBUG com.etc.dao.ArticleDao.find - ==>  Preparing: select * from Users LIMIT ?
+11:28:10.624 logback [http-nio-8090-exec-4] DEBUG com.etc.dao.ArticleDao.find - ==> Parameters: 20(Integer)
+11:28:10.625 logback [http-nio-8090-exec-4] DEBUG com.etc.dao.ArticleDao.find - <==      Total: 11
+11:28:10.626 logback [http-nio-8090-exec-4] DEBUG o.s.w.s.v.ContentNegotiatingViewResolver - Selected 'text/html' given [text/html, application/xhtml+xml, image/webp, image/apng, application/xml;q=0.9, application/signed-exchange;v=b3;q=0.9, */*;q=0.8]
+11:28:10.633 logback [http-nio-8090-exec-4] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+11:28:10.860 logback [http-nio-8090-exec-6] DEBUG o.s.web.servlet.DispatcherServlet - POST "/sbmybatisdemo/userquery", parameters={masked}
+11:28:10.860 logback [http-nio-8090-exec-6] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.etc.controller.UserController#query(Integer, Integer)
+11:28:10.861 logback [http-nio-8090-exec-6] DEBUG com.etc.dao.ArticleDao.find_COUNT - ==>  Preparing: SELECT count(0) FROM Users
+11:28:10.861 logback [http-nio-8090-exec-6] DEBUG com.etc.dao.ArticleDao.find_COUNT - ==> Parameters:
+11:28:10.862 logback [http-nio-8090-exec-6] DEBUG com.etc.dao.ArticleDao.find_COUNT - <==      Total: 1
+11:28:10.862 logback [http-nio-8090-exec-6] DEBUG com.etc.dao.ArticleDao.find - ==>  Preparing: select * from Users LIMIT ?
+11:28:10.862 logback [http-nio-8090-exec-6] DEBUG com.etc.dao.ArticleDao.find - ==> Parameters: 20(Integer)
+11:28:10.863 logback [http-nio-8090-exec-6] DEBUG com.etc.dao.ArticleDao.find - <==      Total: 11
+11:28:10.864 logback [http-nio-8090-exec-6] DEBUG o.s.w.s.v.ContentNegotiatingViewResolver - Selected 'text/html' given [text/html, application/xhtml+xml, image/webp, image/apng, application/xml;q=0.9, application/signed-exchange;v=b3;q=0.9, */*;q=0.8]
+11:28:10.867 logback [http-nio-8090-exec-6] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+11:28:15.034 logback [http-nio-8090-exec-8] DEBUG o.s.web.servlet.DispatcherServlet - POST "/sbmybatisdemo/userquery", parameters={masked}
+11:28:15.035 logback [http-nio-8090-exec-8] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.etc.controller.UserController#query(Integer, Integer)
+11:28:15.037 logback [http-nio-8090-exec-8] DEBUG com.etc.dao.ArticleDao.find_COUNT - ==>  Preparing: SELECT count(0) FROM Users
+11:28:15.037 logback [http-nio-8090-exec-8] DEBUG com.etc.dao.ArticleDao.find_COUNT - ==> Parameters:
+11:28:15.039 logback [http-nio-8090-exec-8] DEBUG com.etc.dao.ArticleDao.find_COUNT - <==      Total: 1
+11:28:15.040 logback [http-nio-8090-exec-8] DEBUG com.etc.dao.ArticleDao.find - ==>  Preparing: select * from Users LIMIT ?
+11:28:15.040 logback [http-nio-8090-exec-8] DEBUG com.etc.dao.ArticleDao.find - ==> Parameters: 20(Integer)
+11:28:15.041 logback [http-nio-8090-exec-8] DEBUG com.etc.dao.ArticleDao.find - <==      Total: 11
+11:28:15.042 logback [http-nio-8090-exec-8] DEBUG o.s.w.s.v.ContentNegotiatingViewResolver - Selected 'text/html' given [text/html, application/xhtml+xml, image/webp, image/apng, application/xml;q=0.9, application/signed-exchange;v=b3;q=0.9, */*;q=0.8]
+11:28:15.045 logback [http-nio-8090-exec-8] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+11:28:17.687 logback [http-nio-8090-exec-10] DEBUG o.s.web.servlet.DispatcherServlet - POST "/sbmybatisdemo/userquery", parameters={masked}
+11:28:17.689 logback [http-nio-8090-exec-10] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.etc.controller.UserController#query(Integer, Integer)
+11:28:17.691 logback [http-nio-8090-exec-10] DEBUG com.etc.dao.ArticleDao.find_COUNT - ==>  Preparing: SELECT count(0) FROM Users
+11:28:17.691 logback [http-nio-8090-exec-10] DEBUG com.etc.dao.ArticleDao.find_COUNT - ==> Parameters:
+11:28:17.692 logback [http-nio-8090-exec-10] DEBUG com.etc.dao.ArticleDao.find_COUNT - <==      Total: 1
+11:28:17.693 logback [http-nio-8090-exec-10] DEBUG com.etc.dao.ArticleDao.find - ==>  Preparing: select * from Users LIMIT ?
+11:28:17.693 logback [http-nio-8090-exec-10] DEBUG com.etc.dao.ArticleDao.find - ==> Parameters: 20(Integer)
+11:28:17.694 logback [http-nio-8090-exec-10] DEBUG com.etc.dao.ArticleDao.find - <==      Total: 11
+11:28:17.695 logback [http-nio-8090-exec-10] DEBUG o.s.w.s.v.ContentNegotiatingViewResolver - Selected 'text/html' given [text/html, application/xhtml+xml, image/webp, image/apng, application/xml;q=0.9, application/signed-exchange;v=b3;q=0.9, */*;q=0.8]
+11:28:17.698 logback [http-nio-8090-exec-10] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+11:28:18.942 logback [http-nio-8090-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - POST "/sbmybatisdemo/userquery", parameters={masked}
+11:28:18.942 logback [http-nio-8090-exec-1] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.etc.controller.UserController#query(Integer, Integer)
+11:28:18.950 logback [http-nio-8090-exec-1] DEBUG com.etc.dao.ArticleDao.find_COUNT - ==>  Preparing: SELECT count(0) FROM Users
+11:28:18.951 logback [http-nio-8090-exec-1] DEBUG com.etc.dao.ArticleDao.find_COUNT - ==> Parameters:
+11:28:18.956 logback [http-nio-8090-exec-1] DEBUG com.etc.dao.ArticleDao.find_COUNT - <==      Total: 1
+11:28:18.956 logback [http-nio-8090-exec-1] DEBUG com.etc.dao.ArticleDao.find - ==>  Preparing: select * from Users LIMIT ?
+11:28:18.957 logback [http-nio-8090-exec-1] DEBUG com.etc.dao.ArticleDao.find - ==> Parameters: 20(Integer)
+11:28:18.961 logback [http-nio-8090-exec-1] DEBUG com.etc.dao.ArticleDao.find - <==      Total: 11
+11:28:18.962 logback [http-nio-8090-exec-1] DEBUG o.s.w.s.v.ContentNegotiatingViewResolver - Selected 'text/html' given [text/html, application/xhtml+xml, image/webp, image/apng, application/xml;q=0.9, application/signed-exchange;v=b3;q=0.9, */*;q=0.8]
+11:28:18.965 logback [http-nio-8090-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+11:28:21.417 logback [http-nio-8090-exec-3] DEBUG o.s.web.servlet.DispatcherServlet - POST "/sbmybatisdemo/userquery", parameters={masked}
+11:28:21.417 logback [http-nio-8090-exec-3] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.etc.controller.UserController#query(Integer, Integer)
+11:28:21.422 logback [http-nio-8090-exec-3] DEBUG com.etc.dao.ArticleDao.find_COUNT - ==>  Preparing: SELECT count(0) FROM Users
+11:28:21.422 logback [http-nio-8090-exec-3] DEBUG com.etc.dao.ArticleDao.find_COUNT - ==> Parameters:
+11:28:21.424 logback [http-nio-8090-exec-3] DEBUG com.etc.dao.ArticleDao.find_COUNT - <==      Total: 1
+11:28:21.424 logback [http-nio-8090-exec-3] DEBUG com.etc.dao.ArticleDao.find - ==>  Preparing: select * from Users LIMIT ?
+11:28:21.424 logback [http-nio-8090-exec-3] DEBUG com.etc.dao.ArticleDao.find - ==> Parameters: 20(Integer)
+11:28:21.425 logback [http-nio-8090-exec-3] DEBUG com.etc.dao.ArticleDao.find - <==      Total: 11
+11:28:21.425 logback [http-nio-8090-exec-3] DEBUG o.s.w.s.v.ContentNegotiatingViewResolver - Selected 'text/html' given [text/html, application/xhtml+xml, image/webp, image/apng, application/xml;q=0.9, application/signed-exchange;v=b3;q=0.9, */*;q=0.8]
+11:28:21.428 logback [http-nio-8090-exec-3] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+11:36:12.675 logback [Thread-38] INFO  o.s.s.c.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+11:36:12.691 logback [Thread-38] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-3 - Shutdown initiated...
+11:36:12.691 logback [Thread-38] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-3 - Shutdown completed.
+11:36:13.096 logback [restartedMain] INFO  com.etc.SbmybatisdemoApplication - Starting SbmybatisdemoApplication on USER-20190611ED with PID 4648 (E:\IdeaProjects2\sbmybatisdemo\target\classes started by Administrator in E:\IdeaProjects2\lagou)
+11:36:13.096 logback [restartedMain] DEBUG com.etc.SbmybatisdemoApplication - Running with Spring Boot v2.3.4.RELEASE, Spring v5.2.9.RELEASE
+11:36:13.096 logback [restartedMain] INFO  com.etc.SbmybatisdemoApplication - No active profile set, falling back to default profiles: default
+11:36:13.408 logback [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8090 (http)
+11:36:13.408 logback [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8090"]
+11:36:13.408 logback [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+11:36:13.408 logback [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.38]
+11:36:13.440 logback [restartedMain] INFO  o.a.c.c.C.[.[.[/sbmybatisdemo] - Initializing Spring embedded WebApplicationContext
+11:36:13.440 logback [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 344 ms
+11:36:13.533 logback [restartedMain] INFO  o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+11:36:13.533 logback [restartedMain] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerAdapter - ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+11:36:13.533 logback [restartedMain] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - 8 mappings in 'requestMappingHandlerMapping'
+11:36:13.549 logback [restartedMain] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+11:36:13.549 logback [restartedMain] DEBUG o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+11:36:13.611 logback [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+11:36:13.627 logback [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8090"]
+11:36:13.627 logback [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8090 (http) with context path '/sbmybatisdemo'
+11:36:13.642 logback [restartedMain] INFO  com.etc.SbmybatisdemoApplication - Started SbmybatisdemoApplication in 0.584 seconds (JVM running for 2452.33)
+11:36:13.642 logback [restartedMain] INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+11:36:29.025 logback [SpringContextShutdownHook] INFO  o.s.s.c.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+13:39:11.790 logback [restartedMain] INFO  com.etc.SbmybatisdemoApplication - Starting SbmybatisdemoApplication on USER-20190611ED with PID 6024 (E:\IdeaProjects2\sbmybatisdemo\target\classes started by Administrator in E:\IdeaProjects2\lagou)
+13:39:11.794 logback [restartedMain] DEBUG com.etc.SbmybatisdemoApplication - Running with Spring Boot v2.3.4.RELEASE, Spring v5.2.9.RELEASE
+13:39:11.795 logback [restartedMain] INFO  com.etc.SbmybatisdemoApplication - No active profile set, falling back to default profiles: default
+13:39:11.963 logback [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+13:39:11.964 logback [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+13:39:13.619 logback [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8090 (http)
+13:39:13.629 logback [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8090"]
+13:39:13.630 logback [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+13:39:13.631 logback [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.38]
+13:39:13.792 logback [restartedMain] INFO  o.a.c.c.C.[.[.[/sbmybatisdemo] - Initializing Spring embedded WebApplicationContext
+13:39:13.792 logback [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1828 ms
+13:39:14.523 logback [restartedMain] INFO  o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+13:39:14.536 logback [restartedMain] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerAdapter - ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+13:39:14.619 logback [restartedMain] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - 8 mappings in 'requestMappingHandlerMapping'
+13:39:14.799 logback [restartedMain] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+13:39:14.808 logback [restartedMain] DEBUG o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+13:39:15.144 logback [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+13:39:15.162 logback [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8090"]
+13:39:15.212 logback [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8090 (http) with context path '/sbmybatisdemo'
+13:39:15.229 logback [restartedMain] INFO  com.etc.SbmybatisdemoApplication - Started SbmybatisdemoApplication in 4.151 seconds (JVM running for 7.503)
+13:40:17.469 logback [http-nio-8090-exec-2] INFO  o.a.c.c.C.[.[.[/sbmybatisdemo] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+13:40:17.470 logback [http-nio-8090-exec-2] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+13:40:17.471 logback [http-nio-8090-exec-2] DEBUG o.s.web.servlet.DispatcherServlet - Detected StandardServletMultipartResolver
+13:40:17.552 logback [http-nio-8090-exec-2] DEBUG o.s.web.servlet.DispatcherServlet - enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+13:40:17.552 logback [http-nio-8090-exec-2] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 81 ms
+13:40:17.563 logback [http-nio-8090-exec-2] DEBUG o.s.web.servlet.DispatcherServlet - POST "/sbmybatisdemo/userquery", parameters={masked}
+13:40:17.581 logback [http-nio-8090-exec-2] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.etc.controller.UserController#query(Integer, Integer)
+13:40:17.670 logback [http-nio-8090-exec-2] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+13:40:17.862 logback [http-nio-8090-exec-2] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+13:40:17.869 logback [http-nio-8090-exec-2] DEBUG com.etc.dao.ArticleDao.find_COUNT - ==>  Preparing: SELECT count(0) FROM Users
+13:40:17.905 logback [http-nio-8090-exec-2] DEBUG com.etc.dao.ArticleDao.find_COUNT - ==> Parameters:
+13:40:17.926 logback [http-nio-8090-exec-2] DEBUG com.etc.dao.ArticleDao.find_COUNT - <==      Total: 1
+13:40:17.931 logback [http-nio-8090-exec-2] DEBUG com.etc.dao.ArticleDao.find - ==>  Preparing: select * from Users LIMIT ?
+13:40:17.931 logback [http-nio-8090-exec-2] DEBUG com.etc.dao.ArticleDao.find - ==> Parameters: 5(Integer)
+13:40:17.933 logback [http-nio-8090-exec-2] DEBUG com.etc.dao.ArticleDao.find - <==      Total: 5
+13:40:17.946 logback [http-nio-8090-exec-2] DEBUG o.s.w.s.v.ContentNegotiatingViewResolver - Selected 'text/html' given [text/html, application/xhtml+xml, image/webp, image/apng, application/xml;q=0.9, application/signed-exchange;v=b3;q=0.9, */*;q=0.8]
+13:40:18.434 logback [http-nio-8090-exec-2] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+13:41:54.515 logback [http-nio-8090-exec-8] DEBUG o.s.web.servlet.DispatcherServlet - POST "/sbmybatisdemo/userquery", parameters={masked}
+13:41:54.515 logback [http-nio-8090-exec-8] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.etc.controller.UserController#query(Integer, Integer)
+13:41:54.517 logback [http-nio-8090-exec-8] DEBUG com.etc.dao.ArticleDao.find_COUNT - ==>  Preparing: SELECT count(0) FROM Users
+13:41:54.518 logback [http-nio-8090-exec-8] DEBUG com.etc.dao.ArticleDao.find_COUNT - ==> Parameters:
+13:41:54.519 logback [http-nio-8090-exec-8] DEBUG com.etc.dao.ArticleDao.find_COUNT - <==      Total: 1
+13:41:54.519 logback [http-nio-8090-exec-8] DEBUG com.etc.dao.ArticleDao.find - ==>  Preparing: select * from Users LIMIT ?
+13:41:54.519 logback [http-nio-8090-exec-8] DEBUG com.etc.dao.ArticleDao.find - ==> Parameters: 5(Integer)
+13:41:54.521 logback [http-nio-8090-exec-8] DEBUG com.etc.dao.ArticleDao.find - <==      Total: 5
+13:41:54.523 logback [http-nio-8090-exec-8] DEBUG o.s.w.s.v.ContentNegotiatingViewResolver - Selected 'text/html' given [text/html, application/xhtml+xml, image/webp, image/apng, application/xml;q=0.9, application/signed-exchange;v=b3;q=0.9, */*;q=0.8]
+13:41:54.539 logback [http-nio-8090-exec-8] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+13:42:40.830 logback [http-nio-8090-exec-10] DEBUG o.s.web.servlet.DispatcherServlet - POST "/sbmybatisdemo/userquery", parameters={masked}
+13:42:40.831 logback [http-nio-8090-exec-10] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.etc.controller.UserController#query(Integer, Integer)
+13:42:40.833 logback [http-nio-8090-exec-10] DEBUG com.etc.dao.ArticleDao.find_COUNT - ==>  Preparing: SELECT count(0) FROM Users
+13:42:40.833 logback [http-nio-8090-exec-10] DEBUG com.etc.dao.ArticleDao.find_COUNT - ==> Parameters:
+13:42:40.835 logback [http-nio-8090-exec-10] DEBUG com.etc.dao.ArticleDao.find_COUNT - <==      Total: 1
+13:42:40.835 logback [http-nio-8090-exec-10] DEBUG com.etc.dao.ArticleDao.find - ==>  Preparing: select * from Users LIMIT ?
+13:42:40.835 logback [http-nio-8090-exec-10] DEBUG com.etc.dao.ArticleDao.find - ==> Parameters: 5(Integer)
+13:42:40.837 logback [http-nio-8090-exec-10] DEBUG com.etc.dao.ArticleDao.find - <==      Total: 5
+13:42:40.838 logback [http-nio-8090-exec-10] DEBUG o.s.w.s.v.ContentNegotiatingViewResolver - Selected 'text/html' given [text/html, application/xhtml+xml, image/webp, image/apng, application/xml;q=0.9, application/signed-exchange;v=b3;q=0.9, */*;q=0.8]
+13:42:40.903 logback [http-nio-8090-exec-10] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+13:43:00.390 logback [http-nio-8090-exec-7] DEBUG o.s.web.servlet.DispatcherServlet - POST "/sbmybatisdemo/userquery", parameters={masked}
+13:43:00.391 logback [http-nio-8090-exec-7] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.etc.controller.UserController#query(Integer, Integer)
+13:43:00.430 logback [http-nio-8090-exec-7] DEBUG com.etc.dao.ArticleDao.find_COUNT - ==>  Preparing: SELECT count(0) FROM Users
+13:43:00.430 logback [http-nio-8090-exec-7] DEBUG com.etc.dao.ArticleDao.find_COUNT - ==> Parameters:
+13:43:00.443 logback [http-nio-8090-exec-7] DEBUG com.etc.dao.ArticleDao.find_COUNT - <==      Total: 1
+13:43:00.444 logback [http-nio-8090-exec-7] DEBUG com.etc.dao.ArticleDao.find - ==>  Preparing: select * from Users LIMIT ?, ?
+13:43:00.444 logback [http-nio-8090-exec-7] DEBUG com.etc.dao.ArticleDao.find - ==> Parameters: 10(Integer), 5(Integer)
+13:43:00.453 logback [http-nio-8090-exec-7] DEBUG com.etc.dao.ArticleDao.find - <==      Total: 1
+13:43:00.454 logback [http-nio-8090-exec-7] DEBUG o.s.w.s.v.ContentNegotiatingViewResolver - Selected 'text/html' given [text/html, application/xhtml+xml, image/webp, image/apng, application/xml;q=0.9, application/signed-exchange;v=b3;q=0.9, */*;q=0.8]
+13:43:00.461 logback [http-nio-8090-exec-7] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+13:43:05.910 logback [http-nio-8090-exec-5] DEBUG o.s.web.servlet.DispatcherServlet - POST "/sbmybatisdemo/userquery", parameters={masked}
+13:43:05.910 logback [http-nio-8090-exec-5] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.etc.controller.UserController#query(Integer, Integer)
+13:43:05.911 logback [http-nio-8090-exec-5] DEBUG com.etc.dao.ArticleDao.find_COUNT - ==>  Preparing: SELECT count(0) FROM Users
+13:43:05.912 logback [http-nio-8090-exec-5] DEBUG com.etc.dao.ArticleDao.find_COUNT - ==> Parameters:
+13:43:05.913 logback [http-nio-8090-exec-5] DEBUG com.etc.dao.ArticleDao.find_COUNT - <==      Total: 1
+13:43:05.913 logback [http-nio-8090-exec-5] DEBUG com.etc.dao.ArticleDao.find - ==>  Preparing: select * from Users LIMIT ?, ?
+13:43:05.913 logback [http-nio-8090-exec-5] DEBUG com.etc.dao.ArticleDao.find - ==> Parameters: 5(Integer), 5(Integer)
+13:43:05.914 logback [http-nio-8090-exec-5] DEBUG com.etc.dao.ArticleDao.find - <==      Total: 5
+13:43:05.915 logback [http-nio-8090-exec-5] DEBUG o.s.w.s.v.ContentNegotiatingViewResolver - Selected 'text/html' given [text/html, application/xhtml+xml, image/webp, image/apng, application/xml;q=0.9, application/signed-exchange;v=b3;q=0.9, */*;q=0.8]
+13:43:05.926 logback [http-nio-8090-exec-5] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+13:43:12.759 logback [http-nio-8090-exec-3] DEBUG o.s.web.servlet.DispatcherServlet - POST "/sbmybatisdemo/userquery", parameters={masked}
+13:43:12.759 logback [http-nio-8090-exec-3] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.etc.controller.UserController#query(Integer, Integer)
+13:43:12.760 logback [http-nio-8090-exec-3] DEBUG com.etc.dao.ArticleDao.find_COUNT - ==>  Preparing: SELECT count(0) FROM Users
+13:43:12.761 logback [http-nio-8090-exec-3] DEBUG com.etc.dao.ArticleDao.find_COUNT - ==> Parameters:
+13:43:12.762 logback [http-nio-8090-exec-3] DEBUG com.etc.dao.ArticleDao.find_COUNT - <==      Total: 1
+13:43:12.762 logback [http-nio-8090-exec-3] DEBUG com.etc.dao.ArticleDao.find - ==>  Preparing: select * from Users LIMIT ?
+13:43:12.762 logback [http-nio-8090-exec-3] DEBUG com.etc.dao.ArticleDao.find - ==> Parameters: 5(Integer)
+13:43:12.764 logback [http-nio-8090-exec-3] DEBUG com.etc.dao.ArticleDao.find - <==      Total: 5
+13:43:12.765 logback [http-nio-8090-exec-3] DEBUG o.s.w.s.v.ContentNegotiatingViewResolver - Selected 'text/html' given [text/html, application/xhtml+xml, image/webp, image/apng, application/xml;q=0.9, application/signed-exchange;v=b3;q=0.9, */*;q=0.8]
+13:43:12.774 logback [http-nio-8090-exec-3] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+13:45:46.039 logback [http-nio-8090-exec-4] DEBUG o.s.web.servlet.DispatcherServlet - POST "/sbmybatisdemo/userquery", parameters={masked}
+13:45:46.039 logback [http-nio-8090-exec-4] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.etc.controller.UserController#query(Integer, Integer)
+13:45:46.041 logback [http-nio-8090-exec-4] DEBUG com.etc.dao.ArticleDao.find_COUNT - ==>  Preparing: SELECT count(0) FROM Users
+13:45:46.041 logback [http-nio-8090-exec-4] DEBUG com.etc.dao.ArticleDao.find_COUNT - ==> Parameters:
+13:45:46.042 logback [http-nio-8090-exec-4] DEBUG com.etc.dao.ArticleDao.find_COUNT - <==      Total: 1
+13:45:46.043 logback [http-nio-8090-exec-4] DEBUG com.etc.dao.ArticleDao.find - ==>  Preparing: select * from Users LIMIT ?
+13:45:46.043 logback [http-nio-8090-exec-4] DEBUG com.etc.dao.ArticleDao.find - ==> Parameters: 5(Integer)
+13:45:46.044 logback [http-nio-8090-exec-4] DEBUG com.etc.dao.ArticleDao.find - <==      Total: 5
+13:45:46.045 logback [http-nio-8090-exec-4] DEBUG o.s.w.s.v.ContentNegotiatingViewResolver - Selected 'text/html' given [text/html, application/xhtml+xml, image/webp, image/apng, application/xml;q=0.9, application/signed-exchange;v=b3;q=0.9, */*;q=0.8]
+13:45:46.054 logback [http-nio-8090-exec-4] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+13:46:37.666 logback [http-nio-8090-exec-6] DEBUG o.s.web.servlet.DispatcherServlet - POST "/sbmybatisdemo/userquery", parameters={masked}
+13:46:37.667 logback [http-nio-8090-exec-6] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.etc.controller.UserController#query(Integer, Integer)
+13:46:37.670 logback [http-nio-8090-exec-6] DEBUG com.etc.dao.ArticleDao.find_COUNT - ==>  Preparing: SELECT count(0) FROM Users
+13:46:37.671 logback [http-nio-8090-exec-6] DEBUG com.etc.dao.ArticleDao.find_COUNT - ==> Parameters:
+13:46:37.672 logback [http-nio-8090-exec-6] DEBUG com.etc.dao.ArticleDao.find_COUNT - <==      Total: 1
+13:46:37.672 logback [http-nio-8090-exec-6] DEBUG com.etc.dao.ArticleDao.find - ==>  Preparing: select * from Users LIMIT ?
+13:46:37.673 logback [http-nio-8090-exec-6] DEBUG com.etc.dao.ArticleDao.find - ==> Parameters: 5(Integer)
+13:46:37.675 logback [http-nio-8090-exec-6] DEBUG com.etc.dao.ArticleDao.find - <==      Total: 5
+13:46:37.678 logback [http-nio-8090-exec-6] DEBUG o.s.w.s.v.ContentNegotiatingViewResolver - Selected 'text/html' given [text/html, application/xhtml+xml, image/webp, image/apng, application/xml;q=0.9, application/signed-exchange;v=b3;q=0.9, */*;q=0.8]
+13:46:37.684 logback [http-nio-8090-exec-6] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+13:46:40.948 logback [http-nio-8090-exec-8] DEBUG o.s.web.servlet.DispatcherServlet - POST "/sbmybatisdemo/userquery", parameters={masked}
+13:46:40.949 logback [http-nio-8090-exec-8] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.etc.controller.UserController#query(Integer, Integer)
+13:46:40.951 logback [http-nio-8090-exec-8] DEBUG com.etc.dao.ArticleDao.find_COUNT - ==>  Preparing: SELECT count(0) FROM Users
+13:46:40.951 logback [http-nio-8090-exec-8] DEBUG com.etc.dao.ArticleDao.find_COUNT - ==> Parameters:
+13:46:40.952 logback [http-nio-8090-exec-8] DEBUG com.etc.dao.ArticleDao.find_COUNT - <==      Total: 1
+13:46:40.953 logback [http-nio-8090-exec-8] DEBUG com.etc.dao.ArticleDao.find - ==>  Preparing: select * from Users LIMIT ?, ?
+13:46:40.953 logback [http-nio-8090-exec-8] DEBUG com.etc.dao.ArticleDao.find - ==> Parameters: 10(Integer), 5(Integer)
+13:46:40.954 logback [http-nio-8090-exec-8] DEBUG com.etc.dao.ArticleDao.find - <==      Total: 1
+13:46:40.955 logback [http-nio-8090-exec-8] DEBUG o.s.w.s.v.ContentNegotiatingViewResolver - Selected 'text/html' given [text/html, application/xhtml+xml, image/webp, image/apng, application/xml;q=0.9, application/signed-exchange;v=b3;q=0.9, */*;q=0.8]
+13:46:40.962 logback [http-nio-8090-exec-8] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+13:46:43.967 logback [http-nio-8090-exec-10] DEBUG o.s.web.servlet.DispatcherServlet - POST "/sbmybatisdemo/userquery", parameters={masked}
+13:46:43.967 logback [http-nio-8090-exec-10] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.etc.controller.UserController#query(Integer, Integer)
+13:46:43.971 logback [http-nio-8090-exec-10] DEBUG com.etc.dao.ArticleDao.find_COUNT - ==>  Preparing: SELECT count(0) FROM Users
+13:46:43.972 logback [http-nio-8090-exec-10] DEBUG com.etc.dao.ArticleDao.find_COUNT - ==> Parameters:
+13:46:43.974 logback [http-nio-8090-exec-10] DEBUG com.etc.dao.ArticleDao.find_COUNT - <==      Total: 1
+13:46:43.975 logback [http-nio-8090-exec-10] DEBUG com.etc.dao.ArticleDao.find - ==>  Preparing: select * from Users LIMIT ?, ?
+13:46:43.976 logback [http-nio-8090-exec-10] DEBUG com.etc.dao.ArticleDao.find - ==> Parameters: 5(Integer), 5(Integer)
+13:46:43.978 logback [http-nio-8090-exec-10] DEBUG com.etc.dao.ArticleDao.find - <==      Total: 5
+13:46:43.981 logback [http-nio-8090-exec-10] DEBUG o.s.w.s.v.ContentNegotiatingViewResolver - Selected 'text/html' given [text/html, application/xhtml+xml, image/webp, image/apng, application/xml;q=0.9, application/signed-exchange;v=b3;q=0.9, */*;q=0.8]
+13:46:43.987 logback [http-nio-8090-exec-10] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+13:46:45.583 logback [http-nio-8090-exec-9] DEBUG o.s.web.servlet.DispatcherServlet - POST "/sbmybatisdemo/userquery", parameters={masked}
+13:46:45.583 logback [http-nio-8090-exec-9] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.etc.controller.UserController#query(Integer, Integer)
+13:46:45.585 logback [http-nio-8090-exec-9] DEBUG com.etc.dao.ArticleDao.find_COUNT - ==>  Preparing: SELECT count(0) FROM Users
+13:46:45.586 logback [http-nio-8090-exec-9] DEBUG com.etc.dao.ArticleDao.find_COUNT - ==> Parameters:
+13:46:45.588 logback [http-nio-8090-exec-9] DEBUG com.etc.dao.ArticleDao.find_COUNT - <==      Total: 1
+13:46:45.590 logback [http-nio-8090-exec-9] DEBUG com.etc.dao.ArticleDao.find - ==>  Preparing: select * from Users LIMIT ?
+13:46:45.591 logback [http-nio-8090-exec-9] DEBUG com.etc.dao.ArticleDao.find - ==> Parameters: 5(Integer)
+13:46:45.595 logback [http-nio-8090-exec-9] DEBUG com.etc.dao.ArticleDao.find - <==      Total: 5
+13:46:45.607 logback [http-nio-8090-exec-9] DEBUG o.s.w.s.v.ContentNegotiatingViewResolver - Selected 'text/html' given [text/html, application/xhtml+xml, image/webp, image/apng, application/xml;q=0.9, application/signed-exchange;v=b3;q=0.9, */*;q=0.8]
+13:46:45.615 logback [http-nio-8090-exec-9] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+13:52:02.999 logback [http-nio-8090-exec-3] DEBUG o.s.web.servlet.DispatcherServlet - POST "/sbmybatisdemo/userquery", parameters={masked}
+13:52:03.002 logback [http-nio-8090-exec-3] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.etc.controller.UserController#query(Integer, Integer)
+13:52:03.008 logback [http-nio-8090-exec-3] DEBUG com.etc.dao.ArticleDao.find_COUNT - ==>  Preparing: SELECT count(0) FROM Users
+13:52:03.008 logback [http-nio-8090-exec-3] DEBUG com.etc.dao.ArticleDao.find_COUNT - ==> Parameters:
+13:52:03.012 logback [http-nio-8090-exec-3] DEBUG com.etc.dao.ArticleDao.find_COUNT - <==      Total: 1
+13:52:03.013 logback [http-nio-8090-exec-3] DEBUG com.etc.dao.ArticleDao.find - ==>  Preparing: select * from Users LIMIT ?
+13:52:03.014 logback [http-nio-8090-exec-3] DEBUG com.etc.dao.ArticleDao.find - ==> Parameters: 5(Integer)
+13:52:03.018 logback [http-nio-8090-exec-3] DEBUG com.etc.dao.ArticleDao.find - <==      Total: 5
+13:52:03.021 logback [http-nio-8090-exec-3] DEBUG o.s.w.s.v.ContentNegotiatingViewResolver - Selected 'text/html' given [text/html, application/xhtml+xml, image/webp, image/apng, application/xml;q=0.9, application/signed-exchange;v=b3;q=0.9, */*;q=0.8]
+13:52:03.114 logback [http-nio-8090-exec-3] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+13:53:17.318 logback [http-nio-8090-exec-4] DEBUG o.s.web.servlet.DispatcherServlet - POST "/sbmybatisdemo/userquery", parameters={masked}
+13:53:17.318 logback [http-nio-8090-exec-4] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.etc.controller.UserController#query(Integer, Integer)
+13:53:17.320 logback [http-nio-8090-exec-4] DEBUG com.etc.dao.ArticleDao.find_COUNT - ==>  Preparing: SELECT count(0) FROM Users
+13:53:17.321 logback [http-nio-8090-exec-4] DEBUG com.etc.dao.ArticleDao.find_COUNT - ==> Parameters:
+13:53:17.322 logback [http-nio-8090-exec-4] DEBUG com.etc.dao.ArticleDao.find_COUNT - <==      Total: 1
+13:53:17.323 logback [http-nio-8090-exec-4] DEBUG com.etc.dao.ArticleDao.find - ==>  Preparing: select * from Users LIMIT ?
+13:53:17.323 logback [http-nio-8090-exec-4] DEBUG com.etc.dao.ArticleDao.find - ==> Parameters: 5(Integer)
+13:53:17.324 logback [http-nio-8090-exec-4] DEBUG com.etc.dao.ArticleDao.find - <==      Total: 5
+13:53:17.325 logback [http-nio-8090-exec-4] DEBUG o.s.w.s.v.ContentNegotiatingViewResolver - Selected 'text/html' given [text/html, application/xhtml+xml, image/webp, image/apng, application/xml;q=0.9, application/signed-exchange;v=b3;q=0.9, */*;q=0.8]
+13:53:17.332 logback [http-nio-8090-exec-4] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+13:59:04.851 logback [Thread-14] INFO  o.s.s.c.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+13:59:04.851 logback [Thread-14] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+13:59:04.877 logback [Thread-14] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+13:59:05.258 logback [restartedMain] INFO  com.etc.SbmybatisdemoApplication - Starting SbmybatisdemoApplication on USER-20190611ED with PID 6024 (E:\IdeaProjects2\sbmybatisdemo\target\classes started by Administrator in E:\IdeaProjects2\lagou)
+13:59:05.258 logback [restartedMain] DEBUG com.etc.SbmybatisdemoApplication - Running with Spring Boot v2.3.4.RELEASE, Spring v5.2.9.RELEASE
+13:59:05.259 logback [restartedMain] INFO  com.etc.SbmybatisdemoApplication - No active profile set, falling back to default profiles: default
+13:59:05.790 logback [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8090 (http)
+13:59:05.791 logback [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8090"]
+13:59:05.791 logback [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+13:59:05.792 logback [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.38]
+13:59:05.860 logback [restartedMain] INFO  o.a.c.c.C.[.[.[/sbmybatisdemo] - Initializing Spring embedded WebApplicationContext
+13:59:05.860 logback [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 597 ms
+13:59:06.001 logback [restartedMain] INFO  o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+13:59:06.003 logback [restartedMain] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerAdapter - ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+13:59:06.014 logback [restartedMain] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - 8 mappings in 'requestMappingHandlerMapping'
+13:59:06.092 logback [restartedMain] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+13:59:06.117 logback [restartedMain] DEBUG o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+13:59:06.198 logback [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+13:59:06.223 logback [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8090"]
+13:59:06.235 logback [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8090 (http) with context path '/sbmybatisdemo'
+13:59:06.354 logback [restartedMain] INFO  com.etc.SbmybatisdemoApplication - Started SbmybatisdemoApplication in 1.167 seconds (JVM running for 1198.613)
+13:59:06.372 logback [restartedMain] INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+14:02:47.588 logback [Thread-21] INFO  o.s.s.c.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+14:02:47.829 logback [restartedMain] INFO  com.etc.SbmybatisdemoApplication - Starting SbmybatisdemoApplication on USER-20190611ED with PID 6024 (E:\IdeaProjects2\sbmybatisdemo\target\classes started by Administrator in E:\IdeaProjects2\lagou)
+14:02:47.829 logback [restartedMain] DEBUG com.etc.SbmybatisdemoApplication - Running with Spring Boot v2.3.4.RELEASE, Spring v5.2.9.RELEASE
+14:02:47.830 logback [restartedMain] INFO  com.etc.SbmybatisdemoApplication - No active profile set, falling back to default profiles: default
+14:02:48.284 logback [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8090 (http)
+14:02:48.284 logback [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8090"]
+14:02:48.285 logback [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+14:02:48.285 logback [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.38]
+14:02:48.319 logback [restartedMain] INFO  o.a.c.c.C.[.[.[/sbmybatisdemo] - Initializing Spring embedded WebApplicationContext
+14:02:48.319 logback [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 486 ms
+14:02:48.431 logback [restartedMain] INFO  o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+14:02:48.434 logback [restartedMain] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerAdapter - ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+14:02:48.444 logback [restartedMain] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - 8 mappings in 'requestMappingHandlerMapping'
+14:02:48.481 logback [restartedMain] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+14:02:48.525 logback [restartedMain] DEBUG o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+14:02:48.685 logback [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+14:02:48.696 logback [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8090"]
+14:02:48.712 logback [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8090 (http) with context path '/sbmybatisdemo'
+14:02:48.717 logback [restartedMain] INFO  com.etc.SbmybatisdemoApplication - Started SbmybatisdemoApplication in 0.964 seconds (JVM running for 1420.973)
+14:02:48.718 logback [restartedMain] INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+14:02:58.267 logback [http-nio-8090-exec-1] INFO  o.a.c.c.C.[.[.[/sbmybatisdemo] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+14:02:58.271 logback [http-nio-8090-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+14:02:58.271 logback [http-nio-8090-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - Detected StandardServletMultipartResolver
+14:02:58.274 logback [http-nio-8090-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+14:02:58.274 logback [http-nio-8090-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 3 ms
+14:02:58.275 logback [http-nio-8090-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - POST "/sbmybatisdemo/userquery", parameters={masked}
+14:02:58.275 logback [http-nio-8090-exec-1] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.etc.controller.UserController#query(Integer, Integer)
+14:02:58.277 logback [http-nio-8090-exec-1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Starting...
+14:02:58.284 logback [http-nio-8090-exec-1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Start completed.
+14:02:58.284 logback [http-nio-8090-exec-1] DEBUG com.etc.dao.ArticleDao.find_COUNT - ==>  Preparing: SELECT count(0) FROM Users
+14:02:58.284 logback [http-nio-8090-exec-1] DEBUG com.etc.dao.ArticleDao.find_COUNT - ==> Parameters:
+14:02:58.288 logback [http-nio-8090-exec-1] DEBUG com.etc.dao.ArticleDao.find_COUNT - <==      Total: 1
+14:02:58.289 logback [http-nio-8090-exec-1] DEBUG com.etc.dao.ArticleDao.find - ==>  Preparing: select * from Users LIMIT ?
+14:02:58.289 logback [http-nio-8090-exec-1] DEBUG com.etc.dao.ArticleDao.find - ==> Parameters: 5(Integer)
+14:02:58.291 logback [http-nio-8090-exec-1] DEBUG com.etc.dao.ArticleDao.find - <==      Total: 5
+14:02:58.293 logback [http-nio-8090-exec-1] DEBUG o.s.w.s.v.ContentNegotiatingViewResolver - Selected 'text/html' given [text/html, application/xhtml+xml, image/webp, image/apng, application/xml;q=0.9, application/signed-exchange;v=b3;q=0.9, */*;q=0.8]
+14:02:58.324 logback [http-nio-8090-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+14:03:01.537 logback [http-nio-8090-exec-3] DEBUG o.s.web.servlet.DispatcherServlet - GET "/sbmybatisdemo/usertoadd", parameters={}
+14:03:01.537 logback [http-nio-8090-exec-3] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.etc.controller.UserController#toadd()
+14:03:01.538 logback [http-nio-8090-exec-3] DEBUG o.s.w.s.v.ContentNegotiatingViewResolver - Selected 'text/html' given [text/html, application/xhtml+xml, image/webp, image/apng, application/xml;q=0.9, application/signed-exchange;v=b3;q=0.9, */*;q=0.8]
+14:03:01.547 logback [http-nio-8090-exec-3] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+14:03:20.423 logback [http-nio-8090-exec-5] DEBUG o.s.web.servlet.DispatcherServlet - POST "/sbmybatisdemo/useradd", parameters={masked}
+14:03:20.423 logback [http-nio-8090-exec-5] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.etc.controller.UserController#add(User)
+14:03:20.442 logback [http-nio-8090-exec-5] DEBUG com.etc.dao.ArticleDao.add - ==>  Preparing: insert into Users values(default,?,?)
+14:03:20.443 logback [http-nio-8090-exec-5] DEBUG com.etc.dao.ArticleDao.add - ==> Parameters: 关羽(String), 147963(String)
+14:03:20.495 logback [http-nio-8090-exec-5] DEBUG com.etc.dao.ArticleDao.add - <==    Updates: 1
+14:03:20.532 logback [http-nio-8090-exec-5] DEBUG o.s.web.servlet.view.RedirectView - View [RedirectView], model {msg=新加成功!}
+14:03:20.535 logback [http-nio-8090-exec-5] DEBUG o.s.web.servlet.DispatcherServlet - Completed 302 FOUND
+14:03:20.540 logback [http-nio-8090-exec-7] DEBUG o.s.web.servlet.DispatcherServlet - GET "/sbmybatisdemo/userget/13?msg=%E6%96%B0%E5%8A%A0%E6%88%90%E5%8A%9F%21", parameters={masked}
+14:03:20.541 logback [http-nio-8090-exec-7] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.etc.controller.UserController#get(Integer)
+14:03:20.546 logback [http-nio-8090-exec-7] DEBUG com.etc.dao.ArticleDao.get - ==>  Preparing: select* from users where uid=?
+14:03:20.547 logback [http-nio-8090-exec-7] DEBUG com.etc.dao.ArticleDao.get - ==> Parameters: 13(Integer)
+14:03:20.548 logback [http-nio-8090-exec-7] DEBUG com.etc.dao.ArticleDao.get - <==      Total: 1
+14:03:20.549 logback [http-nio-8090-exec-7] DEBUG o.s.w.s.v.ContentNegotiatingViewResolver - Selected 'text/html' given [text/html, application/xhtml+xml, image/webp, image/apng, application/xml;q=0.9, application/signed-exchange;v=b3;q=0.9, */*;q=0.8]
+14:03:20.554 logback [http-nio-8090-exec-7] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+14:03:25.460 logback [http-nio-8090-exec-2] DEBUG o.s.web.servlet.DispatcherServlet - POST "/sbmybatisdemo/usermod", parameters={masked}
+14:03:25.461 logback [http-nio-8090-exec-2] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.etc.controller.UserController#mod(User)
+14:03:25.463 logback [http-nio-8090-exec-2] DEBUG com.etc.dao.ArticleDao.mod - ==>  Preparing: update Users set uname=?,password=? where uid=?
+14:03:25.464 logback [http-nio-8090-exec-2] DEBUG com.etc.dao.ArticleDao.mod - ==> Parameters: 关羽2(String), 147963(String), 13(Integer)
+14:03:25.535 logback [http-nio-8090-exec-2] DEBUG com.etc.dao.ArticleDao.mod - <==    Updates: 1
+14:03:25.535 logback [http-nio-8090-exec-2] DEBUG o.s.w.s.view.InternalResourceView - View [InternalResourceView], model {user=com.etc.entity.User@2e38bf59, org.springframework.validation.BindingResult.user=org.springframework.validation.BeanPropertyBindingResult: 0 errors, msg=修改成功!}
+14:03:25.537 logback [http-nio-8090-exec-2] DEBUG o.s.w.s.view.InternalResourceView - Forwarding to [/userget/13]
+14:03:25.539 logback [http-nio-8090-exec-2] DEBUG o.s.web.servlet.DispatcherServlet - "FORWARD" dispatch for POST "/sbmybatisdemo/userget/13", parameters={masked}
+14:03:25.540 logback [http-nio-8090-exec-2] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.etc.controller.UserController#get(Integer)
+14:03:25.540 logback [http-nio-8090-exec-2] DEBUG com.etc.dao.ArticleDao.get - ==>  Preparing: select* from users where uid=?
+14:03:25.541 logback [http-nio-8090-exec-2] DEBUG com.etc.dao.ArticleDao.get - ==> Parameters: 13(Integer)
+14:03:25.542 logback [http-nio-8090-exec-2] DEBUG com.etc.dao.ArticleDao.get - <==      Total: 1
+14:03:25.543 logback [http-nio-8090-exec-2] DEBUG o.s.w.s.v.ContentNegotiatingViewResolver - Selected 'text/html' given [text/html, application/xhtml+xml, image/webp, image/apng, application/xml;q=0.9, application/signed-exchange;v=b3;q=0.9, */*;q=0.8]
+14:03:25.545 logback [http-nio-8090-exec-2] DEBUG o.s.web.servlet.DispatcherServlet - Exiting from "FORWARD" dispatch, status 200
+14:03:25.545 logback [http-nio-8090-exec-2] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+14:03:28.133 logback [http-nio-8090-exec-4] DEBUG o.s.web.servlet.DispatcherServlet - GET "/sbmybatisdemo/userquery", parameters={}
+14:03:28.133 logback [http-nio-8090-exec-4] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.etc.controller.UserController#query(Integer, Integer)
+14:03:28.136 logback [http-nio-8090-exec-4] DEBUG com.etc.dao.ArticleDao.find_COUNT - ==>  Preparing: SELECT count(0) FROM Users
+14:03:28.136 logback [http-nio-8090-exec-4] DEBUG com.etc.dao.ArticleDao.find_COUNT - ==> Parameters:
+14:03:28.137 logback [http-nio-8090-exec-4] DEBUG com.etc.dao.ArticleDao.find_COUNT - <==      Total: 1
+14:03:28.137 logback [http-nio-8090-exec-4] DEBUG com.etc.dao.ArticleDao.find - ==>  Preparing: select * from Users LIMIT ?
+14:03:28.137 logback [http-nio-8090-exec-4] DEBUG com.etc.dao.ArticleDao.find - ==> Parameters: 5(Integer)
+14:03:28.138 logback [http-nio-8090-exec-4] DEBUG com.etc.dao.ArticleDao.find - <==      Total: 5
+14:03:28.139 logback [http-nio-8090-exec-4] DEBUG o.s.w.s.v.ContentNegotiatingViewResolver - Selected 'text/html' given [text/html, application/xhtml+xml, image/webp, image/apng, application/xml;q=0.9, application/signed-exchange;v=b3;q=0.9, */*;q=0.8]
+14:03:28.155 logback [http-nio-8090-exec-4] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+14:03:54.569 logback [http-nio-8090-exec-6] DEBUG o.s.web.servlet.DispatcherServlet - GET "/sbmybatisdemo/userquery", parameters={}
+14:03:54.569 logback [http-nio-8090-exec-6] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.etc.controller.UserController#query(Integer, Integer)
+14:03:54.575 logback [http-nio-8090-exec-6] DEBUG com.etc.dao.ArticleDao.find_COUNT - ==>  Preparing: SELECT count(0) FROM Users
+14:03:54.575 logback [http-nio-8090-exec-6] DEBUG com.etc.dao.ArticleDao.find_COUNT - ==> Parameters:
+14:03:54.576 logback [http-nio-8090-exec-6] DEBUG com.etc.dao.ArticleDao.find_COUNT - <==      Total: 1
+14:03:54.577 logback [http-nio-8090-exec-6] DEBUG com.etc.dao.ArticleDao.find - ==>  Preparing: select * from Users LIMIT ?
+14:03:54.577 logback [http-nio-8090-exec-6] DEBUG com.etc.dao.ArticleDao.find - ==> Parameters: 5(Integer)
+14:03:54.580 logback [http-nio-8090-exec-6] DEBUG com.etc.dao.ArticleDao.find - <==      Total: 5
+14:03:54.582 logback [http-nio-8090-exec-6] DEBUG o.s.w.s.v.ContentNegotiatingViewResolver - Selected 'text/html' given [text/html, application/xhtml+xml, image/webp, image/apng, application/xml;q=0.9, application/signed-exchange;v=b3;q=0.9, */*;q=0.8]
+14:03:54.588 logback [http-nio-8090-exec-6] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+14:03:58.170 logback [Thread-26] INFO  o.s.s.c.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+14:03:58.170 logback [Thread-26] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Shutdown initiated...
+14:03:58.176 logback [Thread-26] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Shutdown completed.
+14:03:58.499 logback [restartedMain] INFO  com.etc.SbmybatisdemoApplication - Starting SbmybatisdemoApplication on USER-20190611ED with PID 6024 (E:\IdeaProjects2\sbmybatisdemo\target\classes started by Administrator in E:\IdeaProjects2\lagou)
+14:03:58.499 logback [restartedMain] DEBUG com.etc.SbmybatisdemoApplication - Running with Spring Boot v2.3.4.RELEASE, Spring v5.2.9.RELEASE
+14:03:58.499 logback [restartedMain] INFO  com.etc.SbmybatisdemoApplication - No active profile set, falling back to default profiles: default
+14:03:59.069 logback [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8090 (http)
+14:03:59.070 logback [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8090"]
+14:03:59.070 logback [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+14:03:59.070 logback [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.38]
+14:03:59.090 logback [restartedMain] INFO  o.a.c.c.C.[.[.[/sbmybatisdemo] - Initializing Spring embedded WebApplicationContext
+14:03:59.091 logback [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 587 ms
+14:03:59.239 logback [restartedMain] INFO  o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+14:03:59.243 logback [restartedMain] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerAdapter - ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+14:03:59.263 logback [restartedMain] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - 8 mappings in 'requestMappingHandlerMapping'
+14:03:59.333 logback [restartedMain] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+14:03:59.354 logback [restartedMain] DEBUG o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+14:03:59.463 logback [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+14:03:59.480 logback [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8090"]
+14:03:59.483 logback [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8090 (http) with context path '/sbmybatisdemo'
+14:03:59.486 logback [restartedMain] INFO  com.etc.SbmybatisdemoApplication - Started SbmybatisdemoApplication in 1.1 seconds (JVM running for 1491.741)
+14:03:59.488 logback [restartedMain] INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+14:03:59.650 logback [http-nio-8090-exec-1] INFO  o.a.c.c.C.[.[.[/sbmybatisdemo] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+14:03:59.651 logback [http-nio-8090-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+14:03:59.651 logback [http-nio-8090-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - Detected StandardServletMultipartResolver
+14:03:59.654 logback [http-nio-8090-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+14:03:59.654 logback [http-nio-8090-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 3 ms
+14:03:59.654 logback [http-nio-8090-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - GET "/sbmybatisdemo/userquery", parameters={}
+14:03:59.654 logback [http-nio-8090-exec-1] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.etc.controller.UserController#query(Integer, Integer)
+14:03:59.657 logback [http-nio-8090-exec-1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-3 - Starting...
+14:03:59.661 logback [http-nio-8090-exec-1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-3 - Start completed.
+14:03:59.662 logback [http-nio-8090-exec-1] DEBUG com.etc.dao.ArticleDao.find_COUNT - ==>  Preparing: SELECT count(0) FROM Users
+14:03:59.662 logback [http-nio-8090-exec-1] DEBUG com.etc.dao.ArticleDao.find_COUNT - ==> Parameters:
+14:03:59.677 logback [http-nio-8090-exec-1] DEBUG com.etc.dao.ArticleDao.find_COUNT - <==      Total: 1
+14:03:59.677 logback [http-nio-8090-exec-1] DEBUG com.etc.dao.ArticleDao.find - ==>  Preparing: select * from Users order by uid desc LIMIT ?
+14:03:59.677 logback [http-nio-8090-exec-1] DEBUG com.etc.dao.ArticleDao.find - ==> Parameters: 5(Integer)
+14:03:59.679 logback [http-nio-8090-exec-1] DEBUG com.etc.dao.ArticleDao.find - <==      Total: 5
+14:03:59.681 logback [http-nio-8090-exec-1] DEBUG o.s.w.s.v.ContentNegotiatingViewResolver - Selected 'text/html' given [text/html, application/xhtml+xml, image/webp, image/apng, application/xml;q=0.9, application/signed-exchange;v=b3;q=0.9, */*;q=0.8]
+14:03:59.861 logback [http-nio-8090-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+16:59:39.284 logback [main] INFO  com.etc.ArticleDaoTest - Starting ArticleDaoTest on USER-20190611ED with PID 4216 (started by Administrator in E:\IdeaProjects2\springbootjpa)
+16:59:39.286 logback [main] DEBUG com.etc.ArticleDaoTest - Running with Spring Boot v2.3.4.RELEASE, Spring v5.2.9.RELEASE
+16:59:39.326 logback [main] INFO  com.etc.ArticleDaoTest - No active profile set, falling back to default profiles: default
+16:59:39.590 logback [main] DEBUG o.s.w.c.s.GenericWebApplicationContext - Refreshing org.springframework.web.context.support.GenericWebApplicationContext@4f1bfe23
+16:59:40.924 logback [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFERRED mode.
+16:59:41.030 logback [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 78ms. Found 1 JPA repository interfaces.
+16:59:41.957 logback [main] INFO  o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+16:59:41.978 logback [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+16:59:42.415 logback [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+16:59:42.665 logback [task-1] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+16:59:42.754 logback [task-1] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 5.4.21.Final
+16:59:42.997 logback [task-1] INFO  o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+16:59:43.250 logback [task-1] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+16:59:44.066 logback [task-1] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+16:59:44.075 logback [task-1] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+16:59:44.651 logback [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+16:59:45.004 logback [main] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerAdapter - ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+16:59:45.333 logback [main] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - 2 mappings in 'requestMappingHandlerMapping'
+16:59:45.425 logback [main] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+16:59:45.452 logback [main] DEBUG o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+16:59:45.671 logback [main] INFO  o.s.d.r.c.DeferredRepositoryInitializationListener - Triggering deferred initialization of Spring Data repositories…
+16:59:45.672 logback [main] INFO  o.s.d.r.c.DeferredRepositoryInitializationListener - Spring Data repositories initialized!
+16:59:45.691 logback [main] INFO  com.etc.ArticleDaoTest - Started ArticleDaoTest in 7.837 seconds (JVM running for 10.4)
+16:59:46.040 logback [main] INFO  com.etc.ArticleDaoTest - article:com.etc.entity.Article@7730ef88
+16:59:46.041 logback [main] INFO  com.etc.ArticleDaoTest - article:com.etc.entity.Article@33feda48
+16:59:46.041 logback [main] INFO  com.etc.ArticleDaoTest - article:com.etc.entity.Article@6588b715
+16:59:46.168 logback [SpringContextShutdownHook] DEBUG o.s.w.c.s.GenericWebApplicationContext - Closing org.springframework.web.context.support.GenericWebApplicationContext@4f1bfe23, started on Tue Sep 22 16:59:39 CST 2020
+16:59:46.172 logback [SpringContextShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+16:59:46.231 logback [SpringContextShutdownHook] INFO  o.s.s.c.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+16:59:46.231 logback [SpringContextShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+16:59:46.287 logback [SpringContextShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+17:00:42.461 logback [main] INFO  com.etc.ArticleDaoTest - Starting ArticleDaoTest on USER-20190611ED with PID 5888 (started by Administrator in E:\IdeaProjects2\springbootjpa)
+17:00:42.463 logback [main] DEBUG com.etc.ArticleDaoTest - Running with Spring Boot v2.3.4.RELEASE, Spring v5.2.9.RELEASE
+17:00:42.466 logback [main] INFO  com.etc.ArticleDaoTest - No active profile set, falling back to default profiles: default
+17:00:42.541 logback [main] DEBUG o.s.w.c.s.GenericWebApplicationContext - Refreshing org.springframework.web.context.support.GenericWebApplicationContext@4f1bfe23
+17:00:44.098 logback [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFERRED mode.
+17:00:44.237 logback [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 109ms. Found 1 JPA repository interfaces.
+17:00:46.118 logback [main] INFO  o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+17:00:46.138 logback [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+17:00:46.823 logback [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+17:00:47.633 logback [task-1] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+17:00:47.736 logback [task-1] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 5.4.21.Final
+17:00:48.060 logback [task-1] INFO  o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+17:00:48.286 logback [task-1] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+17:00:49.134 logback [task-1] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+17:00:49.143 logback [task-1] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+17:00:49.693 logback [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+17:00:50.099 logback [main] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerAdapter - ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+17:00:50.239 logback [main] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - 2 mappings in 'requestMappingHandlerMapping'
+17:00:50.315 logback [main] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+17:00:50.345 logback [main] DEBUG o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+17:00:50.580 logback [main] INFO  o.s.d.r.c.DeferredRepositoryInitializationListener - Triggering deferred initialization of Spring Data repositories…
+17:00:50.581 logback [main] INFO  o.s.d.r.c.DeferredRepositoryInitializationListener - Spring Data repositories initialized!
+17:00:50.592 logback [main] INFO  com.etc.ArticleDaoTest - Started ArticleDaoTest in 10.012 seconds (JVM running for 12.382)
+17:00:51.047 logback [main] INFO  com.etc.ArticleDaoTest - articleId:4,title:java好,content:java好好好,dt:2020-09-22 16:41:47
+17:00:51.047 logback [main] INFO  com.etc.ArticleDaoTest - articleId:3,title:大减价,content:大家快来买，买到就是赚到,dt:2020-09-22 15:34:30
+17:00:51.048 logback [main] INFO  com.etc.ArticleDaoTest - articleId:2,title:大减价,content:大家快来买，买到就是赚到,dt:2020-09-22 15:34:30
+17:00:51.080 logback [SpringContextShutdownHook] DEBUG o.s.w.c.s.GenericWebApplicationContext - Closing org.springframework.web.context.support.GenericWebApplicationContext@4f1bfe23, started on Tue Sep 22 17:00:42 CST 2020
+17:00:51.082 logback [SpringContextShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+17:00:51.106 logback [SpringContextShutdownHook] INFO  o.s.s.c.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+17:00:51.106 logback [SpringContextShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+17:00:51.235 logback [SpringContextShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+17:15:44.604 logback [main] INFO  com.etc.ArticleDaoTest - Starting ArticleDaoTest on USER-20190611ED with PID 2456 (started by Administrator in E:\IdeaProjects2\springbootjpa)
+17:15:44.605 logback [main] DEBUG com.etc.ArticleDaoTest - Running with Spring Boot v2.3.4.RELEASE, Spring v5.2.9.RELEASE
+17:15:44.609 logback [main] INFO  com.etc.ArticleDaoTest - No active profile set, falling back to default profiles: default
+17:15:44.908 logback [main] DEBUG o.s.w.c.s.GenericWebApplicationContext - Refreshing org.springframework.web.context.support.GenericWebApplicationContext@33fe57a9
+17:15:46.383 logback [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFERRED mode.
+17:15:46.625 logback [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 228ms. Found 1 JPA repository interfaces.
+17:15:47.831 logback [main] INFO  o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+17:15:47.852 logback [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+17:15:48.334 logback [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+17:15:48.571 logback [task-1] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+17:15:48.894 logback [task-1] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 5.4.21.Final
+17:15:49.098 logback [task-1] INFO  o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+17:15:49.397 logback [task-1] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+17:15:50.492 logback [task-1] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+17:15:50.527 logback [task-1] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+17:15:51.625 logback [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+17:15:51.945 logback [main] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerAdapter - ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+17:15:52.120 logback [main] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - 2 mappings in 'requestMappingHandlerMapping'
+17:15:52.204 logback [main] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+17:15:52.231 logback [main] DEBUG o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+17:15:52.454 logback [main] INFO  o.s.d.r.c.DeferredRepositoryInitializationListener - Triggering deferred initialization of Spring Data repositories…
+17:15:52.455 logback [main] INFO  o.s.d.r.c.DeferredRepositoryInitializationListener - Spring Data repositories initialized!
+17:15:52.467 logback [main] INFO  com.etc.ArticleDaoTest - Started ArticleDaoTest in 9.457 seconds (JVM running for 11.584)
+17:15:52.762 logback [main] INFO  com.etc.ArticleDaoTest - articleId:1,title:大减价,content:大家快来买，买到就是赚到,dt:2020-09-22 15:34:30
+17:15:52.763 logback [main] INFO  com.etc.ArticleDaoTest - articleId:2,title:大减价,content:大家快来买，买到就是赚到,dt:2020-09-22 15:34:30
+17:15:52.763 logback [main] INFO  com.etc.ArticleDaoTest - articleId:3,title:大减价,content:大家快来买，买到就是赚到,dt:2020-09-22 15:34:30
+17:15:52.764 logback [main] INFO  com.etc.ArticleDaoTest - articleId:4,title:java好,content:java好好好,dt:2020-09-22 16:41:47
+17:15:52.785 logback [SpringContextShutdownHook] DEBUG o.s.w.c.s.GenericWebApplicationContext - Closing org.springframework.web.context.support.GenericWebApplicationContext@33fe57a9, started on Tue Sep 22 17:15:44 CST 2020
+17:15:52.787 logback [SpringContextShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+17:15:52.994 logback [SpringContextShutdownHook] INFO  o.s.s.c.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+17:15:52.994 logback [SpringContextShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+17:15:53.196 logback [SpringContextShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+17:17:10.598 logback [main] INFO  com.etc.ArticleDaoTest - Starting ArticleDaoTest on USER-20190611ED with PID 1492 (started by Administrator in E:\IdeaProjects2\springbootjpa)
+17:17:10.600 logback [main] DEBUG com.etc.ArticleDaoTest - Running with Spring Boot v2.3.4.RELEASE, Spring v5.2.9.RELEASE
+17:17:10.603 logback [main] INFO  com.etc.ArticleDaoTest - No active profile set, falling back to default profiles: default
+17:17:10.690 logback [main] DEBUG o.s.w.c.s.GenericWebApplicationContext - Refreshing org.springframework.web.context.support.GenericWebApplicationContext@33fe57a9
+17:17:12.100 logback [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFERRED mode.
+17:17:12.241 logback [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 128ms. Found 1 JPA repository interfaces.
+17:17:14.666 logback [main] INFO  o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+17:17:14.689 logback [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+17:17:15.359 logback [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+17:17:15.808 logback [task-1] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+17:17:15.942 logback [task-1] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 5.4.21.Final
+17:17:16.130 logback [task-1] INFO  o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+17:17:16.388 logback [task-1] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+17:17:17.159 logback [task-1] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+17:17:17.167 logback [task-1] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+17:17:18.023 logback [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+17:17:18.493 logback [main] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerAdapter - ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+17:17:18.708 logback [main] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - 2 mappings in 'requestMappingHandlerMapping'
+17:17:18.813 logback [main] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+17:17:18.838 logback [main] DEBUG o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+17:17:19.066 logback [main] INFO  o.s.d.r.c.DeferredRepositoryInitializationListener - Triggering deferred initialization of Spring Data repositories…
+17:17:19.067 logback [main] INFO  o.s.d.r.c.DeferredRepositoryInitializationListener - Spring Data repositories initialized!
+17:17:19.078 logback [main] INFO  com.etc.ArticleDaoTest - Started ArticleDaoTest in 9.739 seconds (JVM running for 12.36)
+17:17:19.558 logback [SpringContextShutdownHook] DEBUG o.s.w.c.s.GenericWebApplicationContext - Closing org.springframework.web.context.support.GenericWebApplicationContext@33fe57a9, started on Tue Sep 22 17:17:10 CST 2020
+17:17:19.560 logback [SpringContextShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+17:17:19.563 logback [SpringContextShutdownHook] INFO  o.s.s.c.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+17:17:19.563 logback [SpringContextShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+17:17:19.622 logback [SpringContextShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+17:17:57.267 logback [main] INFO  com.etc.ArticleDaoTest - Starting ArticleDaoTest on USER-20190611ED with PID 4676 (started by Administrator in E:\IdeaProjects2\springbootjpa)
+17:17:57.286 logback [main] DEBUG com.etc.ArticleDaoTest - Running with Spring Boot v2.3.4.RELEASE, Spring v5.2.9.RELEASE
+17:17:57.289 logback [main] INFO  com.etc.ArticleDaoTest - No active profile set, falling back to default profiles: default
+17:17:57.532 logback [main] DEBUG o.s.w.c.s.GenericWebApplicationContext - Refreshing org.springframework.web.context.support.GenericWebApplicationContext@4f1bfe23
+17:17:58.974 logback [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFERRED mode.
+17:17:59.096 logback [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 108ms. Found 1 JPA repository interfaces.
+17:18:00.426 logback [main] INFO  o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+17:18:00.449 logback [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+17:18:00.890 logback [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+17:18:01.094 logback [task-1] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+17:18:01.204 logback [task-1] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 5.4.21.Final
+17:18:01.698 logback [task-1] INFO  o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+17:18:02.272 logback [task-1] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+17:18:03.356 logback [task-1] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+17:18:03.406 logback [task-1] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+17:18:04.956 logback [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+17:18:05.478 logback [main] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerAdapter - ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+17:18:05.587 logback [main] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - 2 mappings in 'requestMappingHandlerMapping'
+17:18:05.668 logback [main] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+17:18:05.710 logback [main] DEBUG o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+17:18:06.028 logback [main] INFO  o.s.d.r.c.DeferredRepositoryInitializationListener - Triggering deferred initialization of Spring Data repositories…
+17:18:06.029 logback [main] INFO  o.s.d.r.c.DeferredRepositoryInitializationListener - Spring Data repositories initialized!
+17:18:06.040 logback [main] INFO  com.etc.ArticleDaoTest - Started ArticleDaoTest in 10.549 seconds (JVM running for 12.887)
+17:18:06.801 logback [SpringContextShutdownHook] DEBUG o.s.w.c.s.GenericWebApplicationContext - Closing org.springframework.web.context.support.GenericWebApplicationContext@4f1bfe23, started on Tue Sep 22 17:17:57 CST 2020
+17:18:06.805 logback [SpringContextShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+17:18:07.032 logback [SpringContextShutdownHook] INFO  o.s.s.c.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+17:18:07.033 logback [SpringContextShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+17:18:07.099 logback [SpringContextShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+17:18:32.947 logback [main] INFO  com.etc.ArticleDaoTest - Starting ArticleDaoTest on USER-20190611ED with PID 5196 (started by Administrator in E:\IdeaProjects2\springbootjpa)
+17:18:32.948 logback [main] DEBUG com.etc.ArticleDaoTest - Running with Spring Boot v2.3.4.RELEASE, Spring v5.2.9.RELEASE
+17:18:32.952 logback [main] INFO  com.etc.ArticleDaoTest - No active profile set, falling back to default profiles: default
+17:18:33.117 logback [main] DEBUG o.s.w.c.s.GenericWebApplicationContext - Refreshing org.springframework.web.context.support.GenericWebApplicationContext@33fe57a9
+17:18:34.371 logback [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFERRED mode.
+17:18:34.501 logback [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 116ms. Found 1 JPA repository interfaces.
+17:18:35.980 logback [main] INFO  o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+17:18:36.003 logback [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+17:18:36.559 logback [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+17:18:36.920 logback [task-1] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+17:18:37.096 logback [task-1] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 5.4.21.Final
+17:18:37.472 logback [task-1] INFO  o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+17:18:38.508 logback [task-1] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+17:18:39.463 logback [task-1] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+17:18:39.473 logback [task-1] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+17:18:40.378 logback [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+17:18:40.808 logback [main] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerAdapter - ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+17:18:40.907 logback [main] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - 2 mappings in 'requestMappingHandlerMapping'
+17:18:41.019 logback [main] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+17:18:41.045 logback [main] DEBUG o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+17:18:41.324 logback [main] INFO  o.s.d.r.c.DeferredRepositoryInitializationListener - Triggering deferred initialization of Spring Data repositories…
+17:18:41.325 logback [main] INFO  o.s.d.r.c.DeferredRepositoryInitializationListener - Spring Data repositories initialized!
+17:18:41.334 logback [main] INFO  com.etc.ArticleDaoTest - Started ArticleDaoTest in 10.381 seconds (JVM running for 13.282)
+17:18:41.807 logback [main] INFO  com.etc.ArticleDaoTest - articleId:1,title:大减价,content:大家快来买，买到就是赚到,dt:2020-09-22 15:34:30
+17:18:41.808 logback [main] INFO  com.etc.ArticleDaoTest - articleId:2,title:大减价,content:大家快来买，买到就是赚到,dt:2020-09-22 15:34:30
+17:18:41.808 logback [main] INFO  com.etc.ArticleDaoTest - articleId:3,title:大减价,content:大家快来买，买到就是赚到,dt:2020-09-22 15:34:30
+17:18:41.881 logback [SpringContextShutdownHook] DEBUG o.s.w.c.s.GenericWebApplicationContext - Closing org.springframework.web.context.support.GenericWebApplicationContext@33fe57a9, started on Tue Sep 22 17:18:33 CST 2020
+17:18:41.884 logback [SpringContextShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+17:18:41.889 logback [SpringContextShutdownHook] INFO  o.s.s.c.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+17:18:41.889 logback [SpringContextShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+17:18:41.906 logback [SpringContextShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.

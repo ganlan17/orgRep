@@ -1,0 +1,124 @@
+11:19:01.945 logback [main] INFO  c.etc.SbmybatisdemoApplicationTests - Starting SbmybatisdemoApplicationTests on USER-20190611ED with PID 5936 (started by Administrator in E:\IdeaProjects2\sbmybatisdemo)
+11:19:01.947 logback [main] DEBUG c.etc.SbmybatisdemoApplicationTests - Running with Spring Boot v2.3.4.RELEASE, Spring v5.2.9.RELEASE
+11:19:01.953 logback [main] INFO  c.etc.SbmybatisdemoApplicationTests - No active profile set, falling back to default profiles: default
+11:19:02.057 logback [main] DEBUG o.s.w.c.s.GenericWebApplicationContext - Refreshing org.springframework.web.context.support.GenericWebApplicationContext@4604b900
+11:19:05.667 logback [main] INFO  o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+11:19:05.698 logback [main] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerAdapter - ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+11:19:05.856 logback [main] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - 2 mappings in 'requestMappingHandlerMapping'
+11:19:05.988 logback [main] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+11:19:06.019 logback [main] DEBUG o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+11:19:06.136 logback [main] WARN  o.s.b.a.t.ThymeleafAutoConfiguration$DefaultTemplateResolverConfiguration - Cannot find template location: classpath:/templates/ (please add some templates or check your Thymeleaf configuration)
+11:19:07.746 logback [main] INFO  c.etc.SbmybatisdemoApplicationTests - Started SbmybatisdemoApplicationTests in 7.303 seconds (JVM running for 10.785)
+11:19:08.298 logback [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+11:19:09.192 logback [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+11:19:09.217 logback [main] DEBUG com.etc.dao.ArticleDao.find - ==>  Preparing: select * from Users
+11:19:09.352 logback [main] DEBUG com.etc.dao.ArticleDao.find - ==> Parameters:
+11:19:09.603 logback [main] DEBUG com.etc.dao.ArticleDao.find - <==      Total: 3
+11:19:09.611 logback [main] INFO  c.etc.SbmybatisdemoApplicationTests - 1:uname:admin,password:admin
+11:19:09.612 logback [main] INFO  c.etc.SbmybatisdemoApplicationTests - 2:uname:xmetc,password:xmetc
+11:19:09.612 logback [main] INFO  c.etc.SbmybatisdemoApplicationTests - 3:uname:itit,password:itit
+11:19:09.863 logback [SpringContextShutdownHook] DEBUG o.s.w.c.s.GenericWebApplicationContext - Closing org.springframework.web.context.support.GenericWebApplicationContext@4604b900, started on Mon Sep 21 11:19:02 CST 2020
+11:19:09.942 logback [SpringContextShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+11:19:10.034 logback [SpringContextShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+11:19:10.036 logback [SpringContextShutdownHook] INFO  o.s.s.c.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+11:23:51.643 logback [main] INFO  com.etc.UserServiceTest - Starting UserServiceTest on USER-20190611ED with PID 800 (started by Administrator in E:\IdeaProjects2\sbmybatisdemo)
+11:23:51.645 logback [main] DEBUG com.etc.UserServiceTest - Running with Spring Boot v2.3.4.RELEASE, Spring v5.2.9.RELEASE
+11:23:51.654 logback [main] INFO  com.etc.UserServiceTest - No active profile set, falling back to default profiles: default
+11:23:51.756 logback [main] DEBUG o.s.w.c.s.GenericWebApplicationContext - Refreshing org.springframework.web.context.support.GenericWebApplicationContext@456abb66
+11:23:55.996 logback [main] INFO  o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+11:23:56.033 logback [main] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerAdapter - ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+11:23:56.416 logback [main] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - 2 mappings in 'requestMappingHandlerMapping'
+11:23:56.519 logback [main] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+11:23:56.573 logback [main] DEBUG o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+11:23:56.654 logback [main] WARN  o.s.b.a.t.ThymeleafAutoConfiguration$DefaultTemplateResolverConfiguration - Cannot find template location: classpath:/templates/ (please add some templates or check your Thymeleaf configuration)
+11:23:57.108 logback [main] INFO  com.etc.UserServiceTest - Started UserServiceTest in 7.204 seconds (JVM running for 10.709)
+11:23:57.460 logback [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+11:23:57.996 logback [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+11:23:58.006 logback [main] DEBUG com.etc.dao.ArticleDao.find - ==>  Preparing: select * from Users
+11:23:58.041 logback [main] DEBUG com.etc.dao.ArticleDao.find - ==> Parameters:
+11:23:58.076 logback [main] DEBUG com.etc.dao.ArticleDao.find - <==      Total: 3
+11:23:58.083 logback [main] INFO  com.etc.UserServiceTest - 1:uname:admin,password:admin
+11:23:58.084 logback [main] INFO  com.etc.UserServiceTest - 2:uname:xmetc,password:xmetc
+11:23:58.084 logback [main] INFO  com.etc.UserServiceTest - 3:uname:itit,password:itit
+11:23:58.108 logback [SpringContextShutdownHook] DEBUG o.s.w.c.s.GenericWebApplicationContext - Closing org.springframework.web.context.support.GenericWebApplicationContext@456abb66, started on Mon Sep 21 11:23:51 CST 2020
+11:23:58.115 logback [SpringContextShutdownHook] INFO  o.s.s.c.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+11:23:58.116 logback [SpringContextShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+11:23:58.588 logback [SpringContextShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+11:28:28.376 logback [restartedMain] INFO  com.etc.SbmybatisdemoApplication - Starting SbmybatisdemoApplication on USER-20190611ED with PID 5752 (E:\IdeaProjects2\sbmybatisdemo\target\classes started by Administrator in E:\IdeaProjects2\lagou)
+11:28:28.378 logback [restartedMain] DEBUG com.etc.SbmybatisdemoApplication - Running with Spring Boot v2.3.4.RELEASE, Spring v5.2.9.RELEASE
+11:28:28.383 logback [restartedMain] INFO  com.etc.SbmybatisdemoApplication - No active profile set, falling back to default profiles: default
+11:28:28.508 logback [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+11:28:28.508 logback [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+11:28:30.387 logback [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8090 (http)
+11:28:30.396 logback [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8090"]
+11:28:30.397 logback [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+11:28:30.397 logback [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.38]
+11:28:30.524 logback [restartedMain] INFO  o.a.c.c.C.[.[.[/sbmybatisdemo] - Initializing Spring embedded WebApplicationContext
+11:28:30.525 logback [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2017 ms
+11:28:31.104 logback [restartedMain] INFO  o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+11:28:31.115 logback [restartedMain] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerAdapter - ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+11:28:31.187 logback [restartedMain] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - 3 mappings in 'requestMappingHandlerMapping'
+11:28:31.218 logback [restartedMain] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+11:28:31.363 logback [restartedMain] DEBUG o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+11:28:31.603 logback [restartedMain] WARN  o.s.b.d.a.OptionalLiveReloadServer - Unable to start LiveReload server
+11:28:31.622 logback [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8090"]
+11:28:31.638 logback [restartedMain] WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Failed to start bean 'webServerStartStop'; nested exception is org.springframework.boot.web.server.PortInUseException: Port 8090 is already in use
+11:28:31.654 logback [restartedMain] INFO  o.s.s.c.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+11:28:31.658 logback [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Pausing ProtocolHandler ["http-nio-8090"]
+11:28:31.658 logback [restartedMain] INFO  o.a.catalina.core.StandardService - Stopping service [Tomcat]
+11:28:31.665 logback [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Stopping ProtocolHandler ["http-nio-8090"]
+11:28:31.665 logback [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Destroying ProtocolHandler ["http-nio-8090"]
+11:28:31.673 logback [restartedMain] INFO  o.s.b.a.l.ConditionEvaluationReportLoggingListener - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+11:28:31.679 logback [restartedMain] ERROR o.s.b.d.LoggingFailureAnalysisReporter - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Web server failed to start. Port 8090 was already in use.
+
+Action:
+
+Identify and stop the process that's listening on port 8090 or configure this application to listen on another port.
+
+11:29:04.508 logback [restartedMain] INFO  com.etc.SbmybatisdemoApplication - Starting SbmybatisdemoApplication on USER-20190611ED with PID 6116 (E:\IdeaProjects2\sbmybatisdemo\target\classes started by Administrator in E:\IdeaProjects2\lagou)
+11:29:04.511 logback [restartedMain] DEBUG com.etc.SbmybatisdemoApplication - Running with Spring Boot v2.3.4.RELEASE, Spring v5.2.9.RELEASE
+11:29:04.512 logback [restartedMain] INFO  com.etc.SbmybatisdemoApplication - No active profile set, falling back to default profiles: default
+11:29:04.596 logback [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+11:29:04.597 logback [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+11:29:06.093 logback [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8090 (http)
+11:29:06.102 logback [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8090"]
+11:29:06.103 logback [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+11:29:06.103 logback [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.38]
+11:29:06.203 logback [restartedMain] INFO  o.a.c.c.C.[.[.[/sbmybatisdemo] - Initializing Spring embedded WebApplicationContext
+11:29:06.203 logback [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1605 ms
+11:29:06.791 logback [restartedMain] INFO  o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+11:29:06.805 logback [restartedMain] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerAdapter - ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+11:29:06.878 logback [restartedMain] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - 3 mappings in 'requestMappingHandlerMapping'
+11:29:06.907 logback [restartedMain] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+11:29:07.020 logback [restartedMain] DEBUG o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+11:29:07.236 logback [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+11:29:07.273 logback [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8090"]
+11:29:07.298 logback [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8090 (http) with context path '/sbmybatisdemo'
+11:29:07.311 logback [restartedMain] INFO  com.etc.SbmybatisdemoApplication - Started SbmybatisdemoApplication in 3.479 seconds (JVM running for 6.229)
+11:29:33.686 logback [http-nio-8090-exec-1] INFO  o.a.c.c.C.[.[.[/sbmybatisdemo] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+11:29:33.687 logback [http-nio-8090-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+11:29:33.687 logback [http-nio-8090-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - Detected StandardServletMultipartResolver
+11:29:33.695 logback [http-nio-8090-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+11:29:33.696 logback [http-nio-8090-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 9 ms
+11:29:33.713 logback [http-nio-8090-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - GET "/sbmybatisdemo/userquery", parameters={}
+11:29:33.722 logback [http-nio-8090-exec-1] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.etc.controller.UserController#query()
+11:29:33.805 logback [http-nio-8090-exec-1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+11:29:33.994 logback [http-nio-8090-exec-1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+11:29:34.002 logback [http-nio-8090-exec-1] DEBUG com.etc.dao.ArticleDao.find - ==>  Preparing: select * from Users
+11:29:34.031 logback [http-nio-8090-exec-1] DEBUG com.etc.dao.ArticleDao.find - ==> Parameters:
+11:29:34.073 logback [http-nio-8090-exec-1] DEBUG com.etc.dao.ArticleDao.find - <==      Total: 3
+11:29:34.086 logback [http-nio-8090-exec-1] DEBUG o.s.w.s.v.ContentNegotiatingViewResolver - Selected 'text/html' given [text/html, application/xhtml+xml, image/webp, image/apng, application/xml;q=0.9, application/signed-exchange;v=b3;q=0.9, */*;q=0.8]
+11:29:34.481 logback [http-nio-8090-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+12:06:21.670 logback [SpringContextShutdownHook] INFO  o.s.s.c.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+12:06:21.686 logback [SpringContextShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+12:06:21.686 logback [SpringContextShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
